@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>职位-查看</title>
+    <meta name="description" content="集团系统">
+    <meta name="keywords" content="职位">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" type="image/png" href="assets/i/favicon.ico">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/amazeui.css" />
+    <link rel="stylesheet" href="assets/css//plugin.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/admin-xm.css">
+</head>
+<body>
+    <!--header-->
+    <header class="admin-header">
+        <!-- logo -->
+        <div class="xm-logo">
+            <a href="javascript:;">
+                <img src="assets/img/xm-logo.svg" alt="logo">
+            </a>
+        </div>
+        <!-- admin middle menu -->
+        <div class="group-nav">
+            <a href="" >工作台</a>
+            <a href="" class="active">组织架构</a>
+            <a href="" >员工管理</a>
+            <a href="" >角色权限</a>
+            <a href="" >设置</a>
+        </div>
+        <!-- right account -->
+        <div class="am-collapse am-topbar-collapse" >
+            <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list ">
+                <!-- user 
+                <li >
+                    <a class="am-dropdown-toggle" href="javascript:;">
+                        <span class="right-nav-icon"><img src="assets/img/notification.svg"><span class="notice"></span></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="am-dropdown-toggle xm-header-list-link" href="javascript:;">
+                        <span class="right-nav-icon"><img src="assets/img/profile.svg"></span>
+                        <span class="tpl-header-list-user-nick">新博新美第一个用户</span>
+                    </a>
+                </li>
+
+                -->
+                <li>
+                    <div class="account-role">
+                        <a href="" >普通用户</a>
+                        <a href="" class="am-active">管理员</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!--pages-->
+    <div class="xm-page-container">
+        <!-- leftpart -->
+        <div class="xm-leftpart">
+            <div id="slimtest1">
+                <div class="leftmenu">
+                    <ul class="navMenu">
+                        <li class="open">
+                            <a href="组织架构.html" class="afinve"><span class="">组织架构</span> <span class=" arrow"></span></a>
+                            <ul class="sub-menu"  style="display: block">
+                                <li><a href="职位.html" class="active"><span>职位</span></a></li>
+                                <li><a href="职务分类.html"><span>职务分类</span></a></li>
+                                <li><a href="职级分类.html"><span>职级分类</span></a></li>
+                                <li><a href="组织类型.html"><span>组织类型</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- rightpart -->
+        <div class="xm-contmain">
+            <div class="pages">
+                <!-- 页面路径 -->
+                <div class="breadbox">
+                    <a href="职位.html" class="goback"><span class="fa fa-angle-double-left"></span>返回</a>
+                    <span>当前位置：</span>
+                    <ol class="am-breadcrumb">
+                        <li><a href="职位.html">职位</a></li>
+                        <li>查看</li>
+                    </ol>
+                </div>
+                <div class="info-box p30">
+                    <div class="am-tabs new-info-tabs" data-am-tabs>
+                        <ul class="am-tabs-nav am-nav am-nav-tabs">
+                            <li class="am-active"><a href="#tab1">基本信息</a></li>
+                            <li><a href="#tab2">扩展信息</a></li>
+                        </ul>
+                        <div class="am-tabs-bd w400">
+                            <div class="am-tab-panel am-fade am-in am-active" id="tab1">
+                                <div  class="wrapper">
+                                        <div class="am-form-group xm-form">
+                                                <label for="user-name" class="am-form-label">职位名称</label>
+                                                <div class="xm-form-cont">
+                                                    <p class="xm-form-text">JAVA高级工程师</p>
+                                                </div>
+                                            </div>
+                                            <div class="am-form-group xm-form">
+                                                <label for="user-phone" class="am-form-label">所属部门</label>
+                                                <div class="xm-form-cont">
+                                                    <p class="xm-form-text">科创中心</p>
+                                                </div>
+                                            </div>
+                                            <div class="am-form-group xm-form">
+                                                <label for="user-name" class="am-form-label">编制人数</label>
+                                                <div class="xm-form-cont">
+                                                    <p class="xm-form-text">68人</p>
+                                                </div>
+                                            </div>
+                                            <div class="am-form-group xm-form">
+                                                <label for="user-phone" class="am-form-label">职务分类</label>
+                                                <div class="xm-form-cont">
+                                                   <p class="xm-form-text">技术</p>
+                                                </div>
+                                            </div>
+                                            <div class="am-form-group xm-form">
+                                                <label for="user-phone" class="am-form-label">职务等级</label>
+                                                <div class="xm-form-cont am-cf">
+                                                    <div class="am-fl">
+                                                        <p class="xm-form-text">P4</p>
+                                                    </div>
+                                                    <div class="w50 am-fl">——</div>
+                                                    <div class="am-fl">
+                                                        <p class="xm-form-text">P5</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="am-form-group xm-form">
+                                                <label for="user-intro" class="am-form-label w120px">任职资格</label>
+                                                <div class="xm-form-cont">
+                                                    <P class="xm-form-text">任职要求此处根此处根据实际此处根据实际此处根据实际此处根据实际此处根据实际据实际情况输入字段</P>
+                                                </div>
+                                            </div>
+                                            <div class="am-form-group xm-form">
+                                                <label for="user-intro" class="am-form-label w120px">责任描述</label>
+                                                <div class="xm-form-cont">
+                                                    <P class="xm-form-text">任职要求此处根据此处根据实际此处根据实际此处根据实际实际情况输入字段</P>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <ul class="xm-namelist">
+                                                <li>
+                                                    <span>申请人</span>
+                                                    <span>张琳</span>
+                                                    <span>2018-05-23 18:40</span>
+                                                </li>
+                                                <li>
+                                                    <span>审批人</span>
+                                                    <span>张琳张琳</span>
+                                                    <span>2018-05-23 18:40</span>
+                                                </li>
+                                                <li>
+                                                    <span>创建人</span>
+                                                    <span>张琳张琳张琳</span>
+                                                    <span>2018-05-23 18:40</span>
+                                                </li>
+                                            </ul>
+                                </div>
+                            </div>
+                            <div class="am-tab-panel am-fade" id="tab2">
+                                <div  class="wrapper">
+                                        <div class="am-form-group xm-form">
+                                                <label for="user-name" class="am-form-label">职位名称</label>
+                                                <div class="xm-form-cont">
+                                                    <p class="xm-form-text">JAVA高级工程师</p>
+                                                </div>
+                                            </div>
+                                            <div class="am-form-group xm-form">
+                                                <label for="user-phone" class="am-form-label">所属部门</label>
+                                                <div class="xm-form-cont">
+                                                    <p class="xm-form-text">科创中心</p>
+                                                </div>
+                                            </div>
+                                            <div class="am-form-group xm-form">
+                                                <label for="user-name" class="am-form-label">编制人数</label>
+                                                <div class="xm-form-cont">
+                                                    <p class="xm-form-text">68人</p>
+                                                </div>
+                                            </div>
+                                            <div class="am-form-group xm-form">
+                                                <label for="user-phone" class="am-form-label">职务分类</label>
+                                                <div class="xm-form-cont">
+                                                   <p class="xm-form-text">技术</p>
+                                                </div>
+                                            </div>
+                                            <div class="am-form-group xm-form">
+                                                <label for="user-phone" class="am-form-label">职务等级</label>
+                                                <div class="xm-form-cont am-cf">
+                                                    <div class="am-fl">
+                                                        <p class="xm-form-text">P4</p>
+                                                    </div>
+                                                    <div class="w50 am-fl">——</div>
+                                                    <div class="am-fl">
+                                                        <p class="xm-form-text">P5</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="am-form-group xm-form">
+                                                <label for="user-intro" class="am-form-label w120px">任职资格</label>
+                                                <div class="xm-form-cont">
+                                                    <P class="xm-form-text">任职要求此处根据实际情况输入字段</P>
+                                                </div>
+                                            </div>
+                                            <div class="am-form-group xm-form">
+                                                <label for="user-intro" class="am-form-label w120px">责任描述</label>
+                                                <div class="xm-form-cont">
+                                                    <P class="xm-form-text">任职要求此处根据实际情况输入字段</P>
+                                                </div>
+                                            </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- footer -->
+            <div class="admin-footer">
+                    版权信息 ©2018 新博新美
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/libs/jquery.min.js"></script>
+    <script src="assets/js/libs/amazeui.min.js"></script>
+    <script src="assets/js/plugins/jquery.slimscroll.min.js"></script> 
+    <script src="assets/js/main.js"></script>
+   
+</body>
+</html>
