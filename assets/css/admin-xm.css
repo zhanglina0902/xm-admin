@@ -55,6 +55,7 @@
 } 
 .admin-listtable > thead > tr > th:first-child,.admin-listtable > tbody > tr > td:first-child{
     padding-left:15px;
+    min-width: 60px;
 }
 .table-check{
     width: 50px;
@@ -78,14 +79,12 @@
     font-size: 22px;
     cursor: pointer;
 }
-
 .xm-handle .fa-ellipsis-v:hover{
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     -webkit-transition: all 500ms;
     transition: all 500ms;
 }
-
 .xm-handlebox{
     position: absolute;
     display: none;
@@ -133,40 +132,37 @@
     transform: rotate(360deg);
     overflow: hidden;
 }
-
 .xm-handlebox a{
     margin-left: 10px;
     margin-right:10px;
 }
 
 /* tabs  new-info */
-
 .new-info-tabs{
     position: relative;
-
 }
 .new-info-tabs .am-nav-tabs {
-    border: 1px solid #ccc;
-    width: 302px;
     margin:20px auto;
     box-sizing: border-box;
-    border-radius: 5px;
+    border:0;
+    display: table
 }
 .new-info-tabs .am-nav-tabs li a {
+    display: inline-block;
     color: #333;
     font-size: 14px;
-    border: none;
     padding:0;
     height: 38px;
     line-height: 38px;
     width: 150px;
     text-align: center;
     margin:0;
+    border: 1px solid #ccc;
+    text-decoration: none;
 
 }
 .new-info-tabs .am-nav-tabs li a:hover {
     background: transparent;
-    border: none;
 }
 .new-info-tabs .am-nav-tabs>li.am-active>a,
 .new-info-tabs .am-nav-tabs>li.am-active>a:focus,
@@ -180,6 +176,16 @@
     background: #F45138;
     color: #ffffff;
     border-radius: 5px;
+}
+.new-info-tabs .am-nav-tabs li:first-child a{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px;
+    border-right:0;
+}
+.new-info-tabs .am-nav-tabs li:last-child a{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px;
+    border-left:0;
 }
 .new-info-tabs .am-nav-tabs li:first-child.am-active {
     background: #F45138;
@@ -198,7 +204,6 @@
 .new-info-tabs .am-tabs-bd .am-tab-panel {
     padding: 0;
 }
-
 .new-info-tabs .am-tabs-bd {
     border: none;
     margin:50px auto;
@@ -225,7 +230,6 @@
     top:12px;
     color:red;
 }
-
 .xm-form-cont{
     position: relative;
     margin-left:150px;
@@ -237,7 +241,6 @@
 .w200{
     width: 200px;
 }
-
 .w600{
     width: 600px;
     margin: 0 auto;
@@ -298,10 +301,6 @@
 
 
 
-
-
-
-
 .form-inout{
     padding: 10px;
     font-size: 14px;
@@ -316,6 +315,9 @@
 }
 
 /* tree */
+.tree-box{
+    min-width: 200px;
+}
 .tree-list ul{
     margin:0;
     padding:0;
@@ -339,9 +341,52 @@
     top:8px;
     margin-right: 5px;
 }
-.xm-tablesbox{
-    /* width:80%; */
+
+/* gongzuotai */
+.xm-title{
+    font-size: 16px;
+    padding:6px 20px;
+    color:rgba(244,81,56,1);
+    background:rgba(244,81,56,0.1094);
 }
+/*admin工作台*/
+.admin-worklist{
+    list-style: none;
+    margin:0;
+    padding:0;
+  }
+  .admin-worklist li{
+    display: inline-block;
+    float: left;
+    margin-top: 30px;
+    text-align: center;
+    margin-right:80px;
+  }
+  .admin-worklist li a{
+    display: block;
+  }
+  .admin-worklist li a:hover{
+    text-decoration: none;
+  }
+  .admin-worklist li a p{
+    margin-top: 10px;
+    color:rgba(0,0,0,1);
+  }
+  .admin-worklist li:last-child{
+    border:1px solid #F45138;
+    width: 84px;
+    height: 84px;
+  }
+  .admin-worklist li:last-child a img{
+    width: 100%;
+  }
+
+  .admin-listtable1 th ,.admin-listtable td{
+      width: 150px;
+
+  }
+
+
 
 
 

@@ -168,6 +168,7 @@ a:hover {
     position: relative;
     height: 100%;
     padding-top:60px;
+    overflow-x: hidden;
 }
 
 /* --------------------------leftpart---------------------------- */
@@ -178,6 +179,7 @@ a:hover {
     top:60px;
     bottom:0;
     height: 100%;
+    z-index: 9999;
 }
 /* left 滚动条样式 */
 .xm-scroll{
@@ -277,24 +279,27 @@ a:hover {
     display: block;
     width: auto;
     margin-left: 200px;
-    min-height: 750px;
-    padding-bottom:50px;
+    min-height: 500px;
+    padding-bottom:30px;
 }
 .pages{
     margin:15px;
+    overflow-x: scroll;
+    overflow-y:hidden; 
+    padding-bottom:30px;
 }
-
+.contmain{
+    display: -webkit-box;
+}
 /*----------- 路径导航------------ */
 .breadbox{
     padding: 0;
     margin: 0;
     margin-bottom: 15px;
     font-size:14px;
-
 }
 .breadbox span{
     color: #999999;
-
 }
 .am-breadcrumb {
     position: relative;
@@ -329,7 +334,6 @@ a:hover {
     color:#000000;
 }
 
-
 /* infobox */
 .info-box{
     background: #ffffff;
@@ -344,7 +348,7 @@ a:hover {
 }
 
 
-/* footer */
+/*------------ footer--------------- */
 .admin-footer {
     position: absolute;
     bottom: 0;
@@ -356,66 +360,36 @@ a:hover {
     line-height: 40px;
     width: 100%;
   }
-
-
-  /* table */
-  .am-table > thead > tr > th,
-  .am-table > tbody > tr > th,
-  .am-table > tfoot > tr > th,
-  .am-table > thead > tr > td,
-  .am-table > tbody > tr > td,
-  .am-table > tfoot > tr > td {
-    padding: 15px 8px;
-    line-height: 1.6;
-    vertical-align: middle;
-    border-top: 1px solid transparent;
-    font-size:14px;
-    min-width: 10%;
+.p-fixed{
+    position: fixed;
+    width:100%;
+    bottom:0;
+}
+.mt50{
+    margin-top: 50px;;
   }
-  .am-table > thead > tr > th {
-    vertical-align: middle;
-    border-bottom: 1px solid transparent;
-    background:#fafafb;
-  }
-  .am-table .am-checkbox{
-      font-size: 16px;
-  }
-  .am-table > tbody > tr > td .am-radio,  
-  .am-table > tbody > tr > td .am-checkbox,
-  .am-table > thead > tr > th .am-radio,  
-  .am-table > thead > tr > th .am-checkbox{
-      margin-top:-4px;
-      margin-bottom: 0;
-  }
-  .am-table > tbody > tr:hover{
-      background: #FFF1EF;
-  }
-  .mt50{
-      margin-top: 50px;;
-  }
-
-
+/* --------滚动条样式------- */
   ::-webkit-scrollbar
 {
-    width: 5px;
-    height: 5px;
-    background-color: #F5F5F5;
+    width: 8px;
+    height: 8px;
+    background: rgba(216,216,216,1);
+    border-radius: 10px;
 }
  
 /*定义滚动条轨道 内阴影+圆角*/
 ::-webkit-scrollbar-track
 {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
     background-color: #F5F5F5;
 }
- 
 /*定义滑块 内阴影+圆角*/
 ::-webkit-scrollbar-thumb
 {
-    border-radius: 5px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-    background-color: #555;
+    border-radius:105px;
+    -webkit-box-shadow: inset 0 0 6px rgba(216,216,216,.3);
+    background-color: rgba(216,216,216,1);
 }
  
 
