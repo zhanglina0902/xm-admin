@@ -173,7 +173,7 @@ a:hover {
 /* --------------------------leftpart---------------------------- */
 .xm-leftpart{
     position: fixed;
-    width:240px;
+    width:200px;
     background: #343434;
     top:60px;
     bottom:0;
@@ -187,7 +187,7 @@ a:hover {
     height: 100%;
 }
 .leftmenu{
-    width: 240px;
+    width: 200px;
 }
 .navMenu li { 
     display: block;
@@ -198,7 +198,7 @@ a:hover {
 .navMenu li a { 
     display: block; 
     overflow: hidden; 
-    padding-left: 50px; 
+    padding-left: 30px; 
     line-height: 60px; 
     color: #ffffff; 
     transition: all .3s; 
@@ -262,7 +262,7 @@ a:hover {
      line-height: 36px; 
      color: #ABB1B7; 
      clear: both; 
-     padding: 8px 0px 8px 60px; 
+     padding: 5px 0px 5px 40px; 
 
     }
 .navMenu li ul.sub-menu li a.active, .navMenu li ul.sub-menu li a:hover, .navMenu li ul.sub-menu li.active  a { 
@@ -271,12 +271,12 @@ a:hover {
     border-right:3px solid #F45138
 }
 
-/* rightpart */
+/* ---------------rightpart-------------------------- */
 .xm-contmain{
     position: relative;
     display: block;
     width: auto;
-    margin-left: 240px;
+    margin-left: 200px;
     min-height: 750px;
     padding-bottom:50px;
 }
@@ -284,7 +284,7 @@ a:hover {
     margin:15px;
 }
 
-/* 路径导航 */
+/*----------- 路径导航------------ */
 .breadbox{
     padding: 0;
     margin: 0;
@@ -327,8 +327,6 @@ a:hover {
 }
 .goback:hover{
     color:#000000;
-
-
 }
 
 
@@ -350,12 +348,12 @@ a:hover {
 .admin-footer {
     position: absolute;
     bottom: 0;
-    font-size:14px;
+    font-size:12px;
     color: #989898;
     background: #4d4d4d;
     text-align: center;
-    height: 60px;
-    line-height: 60px;
+    height: 40px;
+    line-height: 40px;
     width: 100%;
   }
 

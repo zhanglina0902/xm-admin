@@ -1,19 +1,19 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>组织类型-新增</title>
-    <meta name="description" content="集团系统">
-    <meta name="keywords" content="组织类型-职位">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>组织类型-查看</title>
+    <meta name="description" content="集团系统"/>
+    <meta name="keywords" content="组织类型-职位"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="icon" type="image/png" href="assets/i/favicon.ico">
+    <link rel="icon" type="image/png" href="assets/i/favicon.ico"/>
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
     <link rel="stylesheet" href="assets/css/amazeui.css" />
-    <link rel="stylesheet" href="assets/css//plugin.css">
-    <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/admin-xm.css">
+    <link rel="stylesheet" href="assets/css//plugin.css"/>
+    <link rel="stylesheet" href="assets/css/global.css"/>
+    <link rel="stylesheet" href="assets/css/admin-xm.css"/>
 </head>
 <body>
     <!--header-->
@@ -21,7 +21,7 @@
         <!-- logo -->
         <div class="xm-logo">
             <a href="javascript:;">
-                <img src="assets/img/xm-logo.svg" alt="logo">
+                <img src="../../assets/img/xm-logo.svg" alt="logo" />
             </a>
         </div>
         <!-- admin middle menu -->
@@ -69,9 +69,9 @@
                             <a href="组织架构.html" class="afinve"><span class="">组织架构</span> <span class=" arrow"></span></a>
                             <ul class="sub-menu"  style="display: block">
                                 <li><a href="职位.html" ><span>职位</span></a></li>
-                                <li><a href="职务分类.html"><span>职务分类</span></a></li>
+                                <li><a href="职务分类.html" class="active"><span>职务分类</span></a></li>
                                 <li><a href="职级分类.html"><span>职级分类</span></a></li>
-                                <li><a href="组织类型.html" class="active"><span>组织类型</span></a></li>
+                                <li><a href="组织类型.html" ><span>组织类型</span></a></li>
                             </ul>
                         </li>
                     </ul>
@@ -80,38 +80,30 @@
         </div>
         <!-- rightpart -->
         <div class="xm-contmain">
-            <div class="pages">
+            <div class="pages">                  
                 <!-- 页面路径 -->
                 <div class="breadbox">
-                    <a href="组织类型.html" class="goback"><span class="fa fa-angle-double-left"></span>返回</a>
+                    <a href="职务分类.html" class="goback"><span class="fa fa-angle-double-left"></span>返回</a>
                     <span>当前位置：</span>
                     <ol class="am-breadcrumb">
-                        <li><a href="组织类型.html">组织类型</a></li>
-                        <li>新增</li>
+                        <li><a href="职务分类.html">职务分类</a></li>
+                        <li>查看</li>
                     </ol>
                 </div>
                 <div class="info-box p30">
-                    <div  class="wrapper w600 info-inputbox">
-                        <form class="am-form am-form-horizontal">
-                            <div class="am-form-group xm-form">
-                                <label for="doc-vld-job-name" class="am-form-label"><span class="test-star">*</span>组织类型名称</label>
-                                <div class="xm-form-cont">
-                                    <input type="text" id="doc-vld-job-name" minlength="3" placeholder="输入类型名称（至少 3 个字符）" >
-                                </div>
+                    <div  class="wrapper w400 info-inputbox">
+                        <div class="am-form-group xm-form">
+                            <label for="doc-vld-job-name" class="am-form-label"><span class="test-star">*</span>分类名称</label>
+                            <div class="xm-form-cont">
+                                <p class="xm-form-text">专业类</p>
                             </div>
-                            <div class="am-form-group xm-form">
-                                <label for="user-intro" class="am-form-label w120px">说明</label>
-                                <div class="xm-form-cont">
-                                    <textarea class="" rows="5" id="user-intro" placeholder="输入责任描述" maxlength="200"></textarea>
-                                </div>
+                        </div>
+                        <div class="am-form-group xm-form">
+                            <label for="user-intro" class="am-form-label w120px">分类描述</label>
+                            <div class="xm-form-cont">
+                                <p class="xm-form-text">说明内说明内容说明内容说明内容说明内容说说明内容说明内容明内容说明内容说明内容说明内容说明内容说明内容说明内容说明内容容</p>
                             </div>
-                            <div class="am-form-group xm-form mt50">
-                                <div class="xm-form-cont">
-                                    <button type="button" class="am-btn am-btn-primary">确定</button>
-                                    <button type="button" class="am-btn am-btn-default">取消</button>
-                                </div>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -122,10 +114,10 @@
             </div>
         </div>
     </div>
-    <script src="assets/js/libs/jquery.min.js"></script>
-    <script src="assets/js/libs/amazeui.min.js"></script>
-    <script src="assets/js/plugins/jquery.slimscroll.min.js"></script> 
-    <script src="assets/js/main.js"></script>
+    <script src="../../assets/js/libs/jquery.min.js"></script>
+    <script src="../../assets/js/libs/amazeui.min.js"></script>
+    <script src="../../assets/js/plugins/jquery.slimscroll.min.js"></script> 
+    <script src="../../assets/js/main.js"></script>
    
 </body>
 </html>

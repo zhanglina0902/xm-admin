@@ -316,13 +316,14 @@
 }
 
 /* tree */
-.tree-list{
-    margin:0;
-    font-size:14px;
-}
 .tree-list ul{
     margin:0;
     padding:0;
+}
+.tree-list{
+    margin:0;
+    font-size:14px;
+    height: 100%;
 }
 .tree-list ul li{
     display: block;
