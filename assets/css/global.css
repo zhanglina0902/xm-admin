@@ -284,11 +284,12 @@ a:hover {
 }
 .pages{
     margin:15px;
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y:hidden; 
     padding-bottom:30px;
 }
-.contmain{
+
+.dis-box{
     display: -webkit-box;
 }
 /*----------- 路径导航------------ */

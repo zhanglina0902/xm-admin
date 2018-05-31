@@ -10,7 +10,15 @@
    vertical-align: middle;
    border-top: 1px solid transparent;
    font-size:14px;
-   min-width: 150px;
+ }
+
+ .table-h > thead > tr > th,
+ .table-h > tbody > tr > th,
+ .table-h > tfoot > tr > th,
+ .table-h > thead > tr > td,
+ .table-h > tbody > tr > td,
+ .table-h > tfoot > tr > td{
+    min-width: 150px;
  }
  .am-table > thead > tr > th {
    vertical-align: middle;
@@ -31,6 +39,30 @@
 	 background: #FFF1EF;
  }
 
+.pe-10{
+    width:10%;
+}
+.pe-15{
+    width:15%;
+}
+.pe-20{
+    width:20%;
+}
+.pe-30{
+    width:30%;
+}
+.pe-40{
+    width:40%;
+}
+.pe-50{
+    width:50%
+}
+.pe-60{
+    width:60%
+}
+.pe-70{
+    width:70%
+}
 
 
 /*------------- 分页---------------- */
