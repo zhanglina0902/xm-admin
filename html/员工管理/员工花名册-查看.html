@@ -1,0 +1,421 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>员工花名册</title>
+    <meta name="description" content="集团系统" />
+    <meta name="keywords" content="组织架构" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" type="image/png" href="../../assets/i/favicon.ico" />
+    <link rel="stylesheet" href="../../assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../../assets/css/amazeui.css" />
+    <link rel="stylesheet" href="../../assets/css/plugin.css" />
+    <link rel="stylesheet" href="../../assets/css/global.css" />
+    <link rel="stylesheet" href="../../assets/css/admin-xm.css" />
+</head>
+<body>
+    <!--header-->
+    <header class="admin-header">
+        <!-- logo -->
+        <div class="xm-logo">
+            <a href="javascript:;">
+                <img src="../../assets/img/xm-logo.svg" alt="logo" />
+            </a>
+        </div>
+        <!-- admin middle menu -->
+        <div class="group-nav">
+            <a href="../工作台/工作台.html" >工作台</a>
+            <a href="../组织架构/组织架构.html">组织架构</a>
+            <a href="../员工管理/员工花名册.html"  class="active">员工管理</a>
+            <a href="" >角色权限</a>
+            <a href="" >设置</a>
+        </div>
+        <!-- right account -->
+        <div class="am-collapse am-topbar-collapse" >
+            <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list ">
+                <!-- user 
+                <li >
+                    <a class="am-dropdown-toggle" href="javascript:;">
+                        <span class="right-nav-icon"><img src="assets/img/notification.svg"><span class="notice"></span></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="am-dropdown-toggle xm-header-list-link" href="javascript:;">
+                        <span class="right-nav-icon"><img src="assets/img/profile.svg"></span>
+                        <span class="tpl-header-list-user-nick">新博新美第一个用户</span>
+                    </a>
+                </li>
+                -->
+                <li>
+                    <div class="account-role">
+                        <a href="" class="am-active">普通用户</a>
+                        <a href="">管理员</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!--pages-->
+    <div class="xm-page-container">
+        <!-- leftpart -->
+        <div class="xm-leftpart">
+            <div id="slimtest1">
+                <div class="leftmenu">
+                    <ul class="navMenu">
+                        <li class="open">
+                            <a href="../员工管理/员工花名册.html" class="afinve active"><span class="">员工花名册</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- rightpart -->
+        <div class="xm-contmain">
+            <div class="pages">
+                <!-- 页面路径 -->
+                <div class="breadbox">
+                    <span>当前位置：</span>
+                    <ol class="am-breadcrumb">
+                        <li><a href="../员工管理/员工花名册.html">员工管理</a></li>
+                        <li>查看</li>
+                    </ol>
+                </div>
+                <div class="info-box">
+                    <div class="am-tabs new-info-tabs  pt30" data-am-tabs="tabs" > 
+                        <ul class="am-tabs-nav am-nav am-nav-tabs" >
+                            <li class="am-active"><a href="#tab1">基础信息</a></li>
+                            <li><a href="#tab2">账号信息</a></li>
+                            <li><a href="#tab3">扩展信息</a></li>
+                        </ul>
+                        <div class="am-tabs-bd am-bg-gray">
+                            <div class="am-tab-panel am-fade am-in am-active" id="tab1">
+                                <div  class="wrapper am-panel am-radius" >
+                                    <form class="am-form am-form-horizontal w600">
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-name" class="am-form-label">工号</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">XBXM001</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 姓名</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">王枫（fengwang）</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 花名</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">榴莲</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 性别</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">女</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-name" class="am-form-label"> 手机号</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">13456789035</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 入职时间</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">2018-05-07</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 试用期到期</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">2018-05-07</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 是否转正</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">是</p>
+                                            </div>
+                                        </div> 
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 部门</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">科创中心</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 职位</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">web前端工程师</p>
+                                            </div>
+                                        </div>  
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-name" class="am-form-label">职务分类</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">技术部</p>
+                                            </div>
+                                        </div> 
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label">职务等级</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">p2——P3</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label">异动</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">晋升</p>
+                                            </div>
+                                        </div> 
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 晋升日期</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">2018-06-01</p>
+                                            </div>
+                                        </div> 
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 晋升部门</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">科创中心<span class="fa fa-long-arrow-right"></span>科创中心</p>
+                                            </div>
+                                        </div> 
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 晋升职位</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">web前端工程师<span class="fa fa-long-arrow-right"></span>前端主管</p>
+                                            </div>
+                                        </div> 
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 晋升职位</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">web前端工程师<span class="fa fa-long-arrow-right"></span>前端主管</p>
+                                            </div>
+                                        </div> <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 合同到期</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">2020-05-07</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 证件类型</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">身份证</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-name" class="am-form-label"> 证件号</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">130456789456786543</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 出生日期</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">1989-09-02</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-name" class="am-form-label">年龄</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">30岁</p>
+                                            </div>
+                                        </div> 
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-name" class="am-form-label">司龄</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">1年3个月</p>
+                                            </div>
+                                        </div> 
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 婚姻状况</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">未婚</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 生育状况</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">1年3个月</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 户口所在地</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">北京市朝阳区望京绿地中心</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 通讯地址</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">北京市朝阳区望京绿地中心</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 毕业院校</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">北京科技大学</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 学历</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">本科</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-name" class="am-form-label"> 专业</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">计算机</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-name" class="am-form-label"> 紧急联系人</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">李丽</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-name" class="am-form-label"> 紧急联系人电话</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">13456234567</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-name" class="am-form-label"> 工资卡号</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">6225 8812 7945 4567</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-name" class="am-form-label"> 开户银行</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">上地支行</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-name" class="am-form-label"> 开户姓名</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">李里</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-name" class="am-form-label"> 工资卡图片</label>
+                                            <div class="xm-form-cont">
+                                                <div class="xm-form-img">
+                                                    <img src="../../assets/img/card.jpg" class="bank-card" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 社保缴纳日期</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">2018-05-15</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 公积金缴纳日期</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">2018-05-15</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 资料提交</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">齐全</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-name" class="am-form-label"> 资料上传</label>
+                                            <div class="xm-form-cont">
+                                                <div class="xm-form-img">
+                                                    <ul class="xm-zl-piclist">
+                                                        <li>
+                                                            <img src="../../assets/img/ziliao.jpg" />
+                                                            <p>资料名称</p>
+                                                        </li>
+                                                        <li>
+                                                            <img src="../../assets/img/ziliao.jpg"  />
+                                                            <p>资料名称</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 是否离职</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">是</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 离职日期</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">2018-04-29</p>
+                                            </div>
+                                        </div> 
+                                    </form>
+                                </div>
+ 
+                              
+                            </div>
+
+                            <!-- 账号信息 -->
+                          
+                            <div class="am-tab-panel am-fade" id="tab2">
+                                <div  class="wrapper am-panel am-radius pt15" >
+                                    <form class="am-form am-form-horizontal w600">
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-name" class="am-form-label"> 用户登录名</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">XBXM0001</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-name" class="am-form-label"> 密码</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">ADMIN</p>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"> 其他信息</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">用户下次登录时须更改密码（M）</p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>  
+                            </div>
+                            <!-- 扩展信息 -->
+                            <div class="am-tab-panel am-fade" id="tab3">
+                                <div  class="wrapper  am-panel am-radius pt15">
+                                    <p class="am-text-center p30">
+                                        暂时无内容3
+                                    </p>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="admin-footer">
+                    版权信息 ©2018 新博新美
+            </div>
+        </div>
+    </div>
+  
+    <script src="../../assets/js/libs/jquery.min.js"></script>
+    <script src="../../assets/js/libs/amazeui.min.js"></script>
+    <script src="../../assets/js/plugins/jquery.slimscroll.min.js"></script> 
+    <script src="../../assets/js/plugins/city/distpicker.data.js"></script> 
+    <script src="../../assets/js/plugins/city/distpicker.js"></script> 
+    <script src="../../assets/js/plugins/city.js"></script> 
+    <script src="../../assets/js/main.js"></script>
+   
+</body>
+</html>    

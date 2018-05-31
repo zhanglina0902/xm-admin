@@ -2841,7 +2841,7 @@ fieldset[disabled] .am-checkbox-inline {
 .am-form-horizontal .am-checkbox-inline {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 0.6em;
+  padding-top: 0;
 }
 .am-form-horizontal .am-form-group:before,
 .am-form-horizontal .am-form-group:after {

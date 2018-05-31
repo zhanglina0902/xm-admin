@@ -361,6 +361,7 @@ a:hover {
     line-height: 40px;
     width: 100%;
     position: fixed;
+    z-index: 999;
     
   }
 .p-fixed{
