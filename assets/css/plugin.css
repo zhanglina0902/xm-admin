@@ -58,6 +58,9 @@
     border-radius: 5px;
     border:1px solid #ccc;
     font-size: 12px;
+    height: 32px;
+    width:100px;
+    background: #fff;
 }
 .xm-pagination {
     position: relative;
@@ -121,7 +124,7 @@
     padding: 0 10px;
     color: #f00;
 }
-input {
+.xm-pagination input {
     float: left;
     margin: 0 10px;
     padding: 6px 10px;

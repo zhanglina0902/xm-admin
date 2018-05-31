@@ -26,9 +26,9 @@
         </div>
         <!-- admin middle menu -->
         <div class="group-nav">
-            <a href="" >工作台</a>
-            <a href="../组织架构/组织架构.html" >组织架构</a>
-            <a href="" class="active">员工管理</a>
+            <a href="../工作台/工作台.html" >工作台</a>
+            <a href="../组织架构/组织架构.html"  class="active">组织架构</a>
+            <a href="../员工管理/员工花名册.html" >员工管理</a>
             <a href="" >角色权限</a>
             <a href="" >设置</a>
         </div>
@@ -59,13 +59,19 @@
     </header>
     <!--pages-->
     <div class="xm-page-container">
-        <!-- leftpart -->
-        <div class="xm-leftpart">
+         <!-- leftpart -->
+         <div class="xm-leftpart">
             <div id="slimtest1">
                 <div class="leftmenu">
                     <ul class="navMenu">
                         <li class="open">
-                            <a href="员工花名册.html" class="afinve active"><span class="">员工花名册</span></a>
+                            <a href="组织架构.html" class="afinve active"><span class="">组织架构</span> <span class=" arrow"></span></a>
+                            <ul class="sub-menu" style="display: block;">
+                                <li><a href="职位.html"><span>职位</span></a></li>
+                                <li><a href="职务分类.html"><span>职务分类</span></a></li>
+                                <li><a href="职级分类.html"><span>职级分类</span></a></li>
+                                <li><a href="组织类型.html"><span>组织类型</span></a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -78,12 +84,12 @@
                 <div class="breadbox">
                     <span>当前位置：</span>
                     <ol class="am-breadcrumb">
-                        <li>员工花名册</li>
+                        <li>组织架构</li>
                     </ol>
                 </div>
                 <div class="contmain">
+                    <!-- tree -->
                     <div class="tree-box">
-                        <!-- tree -->
                         <div class="tree-list">
                             <ul>
                                 <li>
@@ -120,14 +126,13 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- end tree -->
                     <div class="right-cont" >
                         <div class="info-box  xm-tablesbox-1">
                             <div class="info-title am-cf">
                                 <div class="btn-group am-fl">
-                                    <a class="am-btn am-radius am-btn-primary" href="">新增</a>
+                                    <a class="am-btn am-radius am-btn-primary" href="组织架构-新增.html">新增</a>
                                     <a class="am-btn am-radius am-btn-secondary">启用</a>
-                                    <a class="am-btn am-radius am-btn-default">导入</a>
-                                    <a class="am-btn am-radius am-btn-default">导出</a>
                                     <a class="am-btn am-radius am-btn-default">启用</a>
                                     <a class="am-btn am-radius am-btn-default" disabled="disabled">删除</a>
                                 </div>
@@ -144,14 +149,13 @@
                                             <input type="checkbox" value="" data-am-ucheck ="checkbox"/>
                                         </label>
                                     </th>
-                                    <th class="">工号</th>
-                                    <th>姓名</th>
-                                    <th>部门</th>
-                                    <th>职位</th>
-                                    <th>手机号</th>
-                                    <th>邮箱</th>
-                                    <th>证件类型</th>
-                                    <th>证件号码</th>
+                                    <th class="">编码</th>
+                                    <th>名称</th>
+                                    <th>上级组织</th>
+                                    <th>部门负责人</th>
+                                    <th>员工数量</th>
+                                    <th>类型</th>
+                                    <th>状态</th>
                                     <th>操作</th>
                                 </thead>
                                 <tbody>
@@ -162,13 +166,12 @@
                                             </label>                                  
                                             </td>
                                         <td>0000011</td>
-                                        <td><a href="">李莹</a></td>
+                                        <td><a href="">部门一</a></td>
                                         <td>科创中心</td>
-                                        <td>web前端工程师</td>
-                                        <td>13424567892</td>
-                                        <td>345678087@qq.com</td>
-                                        <td>身份证</td>
-                                        <td>130234567543462345</td>
+                                        <td>李莹</td>
+                                        <td>20</td>
+                                        <td>分公司</td>
+                                        <td>启用</td>
                                         <td class="xm-handle" >
                                             <span class="fa fa-ellipsis-v xm-icons" ></span>
                                             <div class="xm-handlebox"  style="display:block" >
@@ -189,13 +192,12 @@
                                             </label>                                  
                                             </td>
                                         <td>0000011</td>
-                                        <td><a href="">李莹</a></td>
+                                        <td><a href="">部门一</a></td>
                                         <td>科创中心</td>
-                                        <td>web前端工程师</td>
-                                        <td>13424567892</td>
-                                        <td>345678087@qq.com</td>
-                                        <td>身份证</td>
-                                        <td>130234567543462345</td>
+                                        <td>李莹</td>
+                                        <td>20</td>
+                                        <td>分公司</td>
+                                        <td>启用</td>
                                         <td class="xm-handle" >
                                             <span class="fa fa-ellipsis-v xm-icons" ></span>
                                             <div class="xm-handlebox"  style="display:block" >
@@ -216,13 +218,12 @@
                                             </label>                                  
                                             </td>
                                         <td>0000011</td>
-                                        <td><a href="">李莹</a></td>
+                                        <td><a href="">部门一</a></td>
                                         <td>科创中心</td>
-                                        <td>web前端工程师</td>
-                                        <td>13424567892</td>
-                                        <td>345678087@qq.com</td>
-                                        <td>身份证</td>
-                                        <td>130234567543462345</td>
+                                        <td>李莹</td>
+                                        <td>20</td>
+                                        <td>分公司</td>
+                                        <td>启用</td>
                                         <td class="xm-handle" >
                                             <span class="fa fa-ellipsis-v xm-icons" ></span>
                                             <div class="xm-handlebox"  style="display:block" >
@@ -243,40 +244,12 @@
                                             </label>                                  
                                             </td>
                                         <td>0000011</td>
-                                        <td><a href="">李莹</a></td>
+                                        <td><a href="">部门一</a></td>
                                         <td>科创中心</td>
-                                        <td>web前端工程师</td>
-                                        <td>13424567892</td>
-                                        <td>345678087@qq.com</td>
-                                        <td>身份证</td>
-                                        <td>130234567543462345</td>
-                                        <td class="xm-handle" >
-                                            <span class="fa fa-ellipsis-v xm-icons" ></span>
-                                            <div class="xm-handlebox"  style="display:block" >
-                                                <div class="xm-popcont">
-                                                    <div class="w120">
-                                                        <a href="">修改</a>
-                                                        <a href="">删除</a>
-                                                    </div>
-                                                </div>
-                                                <div class="xm-popcaret"></div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                     <tr>
-                                        <td>
-                                            <label class="am-checkbox">
-                                                <input type="checkbox" value="" data-am-ucheck="checkbox" />
-                                            </label>                                  
-                                            </td>
-                                        <td>0000011</td>
-                                        <td><a href="">李莹</a></td>
-                                        <td>科创中心</td>
-                                        <td>web前端工程师</td>
-                                        <td>13424567892</td>
-                                        <td>345678087@qq.com</td>
-                                        <td>身份证</td>
-                                        <td>130234567543462345</td>
+                                        <td>李莹</td>
+                                        <td>20</td>
+                                        <td>分公司</td>
+                                        <td>启用</td>
                                         <td class="xm-handle" >
                                             <span class="fa fa-ellipsis-v xm-icons" ></span>
                                             <div class="xm-handlebox"  style="display:block" >
@@ -297,13 +270,12 @@
                                             </label>                                  
                                             </td>
                                         <td>0000011</td>
-                                        <td><a href="">李莹</a></td>
+                                        <td><a href="">部门一</a></td>
                                         <td>科创中心</td>
-                                        <td>web前端工程师</td>
-                                        <td>13424567892</td>
-                                        <td>345678087@qq.com</td>
-                                        <td>身份证</td>
-                                        <td>130234567543462345</td>
+                                        <td>李莹</td>
+                                        <td>20</td>
+                                        <td>分公司</td>
+                                        <td>启用</td>
                                         <td class="xm-handle" >
                                             <span class="fa fa-ellipsis-v xm-icons" ></span>
                                             <div class="xm-handlebox"  style="display:block" >
@@ -317,6 +289,62 @@
                                             </div>
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="am-checkbox">
+                                                <input type="checkbox" value="" data-am-ucheck="checkbox" />
+                                            </label>                                  
+                                            </td>
+                                        <td>0000011</td>
+                                        <td><a href="">部门一</a></td>
+                                        <td>科创中心</td>
+                                        <td>李莹</td>
+                                        <td>20</td>
+                                        <td>分公司</td>
+                                        <td>启用</td>
+                                        <td class="xm-handle" >
+                                            <span class="fa fa-ellipsis-v xm-icons" ></span>
+                                            <div class="xm-handlebox"  style="display:block" >
+                                                <div class="xm-popcont">
+                                                    <div class="w120">
+                                                        <a href="">修改</a>
+                                                        <a href="">删除</a>
+                                                    </div>
+                                                </div>
+                                                <div class="xm-popcaret"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="am-checkbox">
+                                                <input type="checkbox" value="" data-am-ucheck="checkbox" />
+                                            </label>                                  
+                                            </td>
+                                        <td>0000011</td>
+                                        <td><a href="">部门一</a></td>
+                                        <td>科创中心</td>
+                                        <td>李莹</td>
+                                        <td>20</td>
+                                        <td>分公司</td>
+                                        <td>启用</td>
+                                        <td class="xm-handle" >
+                                            <span class="fa fa-ellipsis-v xm-icons" ></span>
+                                            <div class="xm-handlebox"  style="display:block" >
+                                                <div class="xm-popcont">
+                                                    <div class="w120">
+                                                        <a href="">修改</a>
+                                                        <a href="">删除</a>
+                                                    </div>
+                                                </div>
+                                                <div class="xm-popcaret"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    
+                                   
+                                   
                                 </tbody>
                             </table>
                         </div>
