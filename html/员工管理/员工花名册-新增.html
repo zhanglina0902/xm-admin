@@ -10,6 +10,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <link rel="icon" type="image/png" href="../../assets/i/favicon.ico" />
     <link rel="stylesheet" href="../../assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../../assets/css/iconfont.css" />
     <link rel="stylesheet" href="../../assets/css/amazeui.css" />
     <link rel="stylesheet" href="../../assets/css/plugin.css" />
     <link rel="stylesheet" href="../../assets/css/global.css" />
@@ -97,6 +98,7 @@
                                             <label for="user-name" class="am-form-label"><span class="test-star">*</span>工号</label>
                                             <div class="xm-form-cont">
                                                 <input type="text"  placeholder="工号" />
+                                                <button type="button" class="am-btn am-btn-primary btn-xinzeng">生成</button>
                                             </div>
                                         </div>
                                         <div class="am-form-group xm-form">
@@ -294,88 +296,105 @@
 
                                 <!--  -->
                                 <div  class="wrapper am-panel am-radius pt15" >
-                                        <form class="am-form am-form-horizontal w600">
-                                            <div class="am-form-group xm-form">
-                                                <label for="user-phone" class="am-form-label"><span class="test-star">*</span>合同到期</label>
-                                                <div class="xm-form-cont">
-                                                    <div class="am-input-group input-group">
-                                                        <input type="text" class="am-form-field tpl-form-no-bg" placeholder="请选择时间" data-am-datepicker=""/>
-                                                        <span class="am-input-group-label datepickerbutton">
-                                                            <i class="icon-th am-icon-calendar"></i>
-                                                        </span>
-                                                    </div>
+                                    <form class="am-form am-form-horizontal w600">
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"><span class="test-star">*</span>合同到期</label>
+                                            <div class="xm-form-cont">
+                                                <div class="am-input-group input-group">
+                                                    <input type="text" class="am-form-field tpl-form-no-bg" placeholder="请选择时间" data-am-datepicker=""/>
+                                                    <span class="am-input-group-label datepickerbutton">
+                                                        <i class="icon-th am-icon-calendar"></i>
+                                                    </span>
                                                 </div>
                                             </div>
-                                            <div class="am-form-group xm-form">
-                                                    <label for="user-phone" class="am-form-label"><span class="test-star">*</span>证件类型</label>
-                                                    <div class="xm-form-cont">
-                                                        <select>
-                                                            <option value="请选择">请选择</option>
-                                                            <option value="身份证">身份证</option>
-                                                            <option value="社保卡">社保卡</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            <div class="am-form-group xm-form">
-                                                <label for="user-name" class="am-form-label"><span class="test-star">*</span>证件号</label>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                                <label for="user-phone" class="am-form-label"><span class="test-star">*</span>证件类型</label>
                                                 <div class="xm-form-cont">
-                                                    <input type="text"  placeholder="请输入证件号" />
+                                                    <select>
+                                                        <option value="请选择">请选择</option>
+                                                        <option value="身份证">身份证</option>
+                                                        <option value="社保卡">社保卡</option>
+                                                    </select>
                                                 </div>
                                             </div>
-                                            <div class="am-form-group xm-form">
-                                                <label for="user-phone" class="am-form-label"><span class="test-star">*</span>出生日期</label>
-                                                <div class="xm-form-cont">
-                                                    <div class="am-input-group input-group">
-                                                        <input type="text" class="am-form-field tpl-form-no-bg" placeholder="请选择出生日期" data-am-datepicker=""/>
-                                                        <span class="am-input-group-label datepickerbutton">
-                                                            <i class="icon-th am-icon-calendar"></i>
-                                                        </span>
-                                                    </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-name" class="am-form-label"><span class="test-star">*</span>证件号</label>
+                                            <div class="xm-form-cont">
+                                                <input type="text"  placeholder="请输入证件号" />
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"><span class="test-star">*</span>出生日期</label>
+                                            <div class="xm-form-cont">
+                                                <div class="am-input-group input-group">
+                                                    <input type="text" class="am-form-field tpl-form-no-bg" placeholder="请选择出生日期" data-am-datepicker=""/>
+                                                    <span class="am-input-group-label datepickerbutton">
+                                                        <i class="icon-th am-icon-calendar"></i>
+                                                    </span>
                                                 </div>
                                             </div>
-                                            <div class="am-form-group xm-form">
-                                                <label for="user-name" class="am-form-label">年龄</label>
-                                                <div class="xm-form-cont">
-                                                    <p class="xm-form-text">30岁</p>
-                                                </div>
-                                            </div> 
-                                            <div class="am-form-group xm-form">
-                                                <label for="user-name" class="am-form-label">司龄</label>
-                                                <div class="xm-form-cont">
-                                                    <p class="xm-form-text">1年3个月</p>
-                                                </div>
-                                            </div> 
-                                            <div class="am-form-group xm-form">
-                                                <label for="user-phone" class="am-form-label"><span class="test-star">*</span>婚姻状况</label>
-                                                <div class="xm-form-cont">
-                                                    <div class="am-form-group mt3">
-                                                        <label class="am-radio-inline">
-                                                            <input type="radio" name="radio12" value="已婚" data-am-ucheck="checkbox">已婚
-                                                        </label>
-                                                        <label class="am-radio-inline">
-                                                            <input type="radio" name="radio12" value="未婚" data-am-ucheck="checkbox" checked="checked">未婚
-                                                        </label>
-                                                    </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-name" class="am-form-label">年龄</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">30岁</p>
+                                            </div>
+                                        </div> 
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-name" class="am-form-label">司龄</label>
+                                            <div class="xm-form-cont">
+                                                <p class="xm-form-text">1年3个月</p>
+                                            </div>
+                                        </div> 
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"><span class="test-star">*</span>婚姻状况</label>
+                                            <div class="xm-form-cont">
+                                                <div class="am-form-group mt3">
+                                                    <label class="am-radio-inline">
+                                                        <input type="radio" name="radio12" value="已婚" data-am-ucheck="checkbox">已婚
+                                                    </label>
+                                                    <label class="am-radio-inline">
+                                                        <input type="radio" name="radio12" value="未婚" data-am-ucheck="checkbox" checked="checked">未婚
+                                                    </label>
                                                 </div>
                                             </div>
-                                            <div class="am-form-group xm-form">
-                                                <label for="user-phone" class="am-form-label"><span class="test-star">*</span>生育状况</label>
-                                                <div class="xm-form-cont">
-                                                    <div class="am-form-group mt3">
-                                                        <label class="am-radio-inline">
-                                                            <input type="radio" name="radio13" value="一孩" data-am-ucheck="checkbox" checked="checked">一孩
-                                                        </label>
-                                                        <label class="am-radio-inline">
-                                                            <input type="radio" name="radio13" value="二孩" data-am-ucheck="checkbox">二孩
-                                                        </label>
-                                                        <label class="am-radio-inline">
-                                                            <input type="radio" name="radio13" value="三孩" data-am-ucheck="checkbox">三孩
-                                                        </label>
-                                                    </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"><span class="test-star">*</span>生育状况</label>
+                                            <div class="xm-form-cont">
+                                                <div class="am-form-group mt3">
+                                                    <label class="am-radio-inline">
+                                                        <input type="radio" name="radio13" value="一孩" data-am-ucheck="checkbox" checked="checked">一孩
+                                                    </label>
+                                                    <label class="am-radio-inline">
+                                                        <input type="radio" name="radio13" value="二孩" data-am-ucheck="checkbox">二孩
+                                                    </label>
+                                                    <label class="am-radio-inline">
+                                                        <input type="radio" name="radio13" value="三孩" data-am-ucheck="checkbox">三孩
+                                                    </label>
                                                 </div>
                                             </div>
-                                            <div class="am-form-group xm-form">
-                                                <label for="user-phone" class="am-form-label"><span class="test-star">*</span>户口所在地</label>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"><span class="test-star">*</span>户口所在地</label>
+                                            <div class="xm-form-cont am-cf d-flex" data-toggle="distpicker">
+                                                <div class="form-group w145">
+                                                    <select class="form-control" id="province1"></select>
+                                                </div>
+                                                <div class="form-group w145">
+                                                    <select class="form-control" id="city1"></select>
+                                                </div>
+                                                <div class="form-group w145">
+                                                    <select class="form-control" id="district1"></select>
+                                                </div>
+                                            </div>
+                                            <div class="xm-form-cont am-cf pt15">
+                                                <input type="text" placeholder="详细地址">
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                                <label for="user-phone" class="am-form-label"><span class="test-star">*</span>通讯地址</label>
                                                 <div class="xm-form-cont am-cf d-flex" data-toggle="distpicker">
                                                     <div class="form-group w145">
                                                         <select class="form-control" id="province1"></select>
@@ -392,171 +411,187 @@
                                                 </div>
                                             </div>
                                             <div class="am-form-group xm-form">
-                                                    <label for="user-phone" class="am-form-label"><span class="test-star">*</span>通讯地址</label>
-                                                    <div class="xm-form-cont am-cf d-flex" data-toggle="distpicker">
-                                                        <div class="form-group w145">
-                                                            <select class="form-control" id="province1"></select>
-                                                        </div>
-                                                        <div class="form-group w145">
-                                                            <select class="form-control" id="city1"></select>
-                                                        </div>
-                                                        <div class="form-group w145">
-                                                            <select class="form-control" id="district1"></select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="xm-form-cont am-cf pt15">
-                                                        <input type="text" placeholder="详细地址">
-                                                    </div>
-                                                </div>
-                                                <div class="am-form-group xm-form">
-                                                    <label for="user-phone" class="am-form-label"><span class="test-star">*</span>毕业院校</label>
-                                                    <div class="xm-form-cont">
-                                                        <select>
-                                                            <option value="请选择">请选择</option>
-                                                            <option value="山东大学">山东大学</option>
-                                                            <option value="北京大学">北京大学</option>
-                                                            <option value="清华大学">清华大学</option>
-                                                            <option value="北京科技大学">北京科技大学</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="am-form-group xm-form">
-                                                    <label for="user-phone" class="am-form-label"><span class="test-star">*</span>学历</label>
-                                                    <div class="xm-form-cont">
-                                                        <select>
-                                                            <option value="请选择">请选择</option>
-                                                            <option value="专科">专科</option>
-                                                            <option value="本科">本科</option>
-                                                            <option value="硕士">硕士</option>
-                                                            <option value="博士">博士</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="am-form-group xm-form">
-                                                    <label for="user-name" class="am-form-label"><span class="test-star">*</span>专业</label>
-                                                    <div class="xm-form-cont">
-                                                        <input type="text"  placeholder="请输入专业名称" />
-                                                    </div>
-                                                </div>
-                                                <div class="am-form-group xm-form">
-                                                    <label for="user-name" class="am-form-label"><span class="test-star">*</span>紧急联系人</label>
-                                                    <div class="xm-form-cont">
-                                                        <input type="text"  placeholder="请输入联系人的名字" />
-                                                    </div>
-                                                </div>
-                                                <div class="am-form-group xm-form">
-                                                    <label for="user-name" class="am-form-label"><span class="test-star">*</span>紧急联系人电话</label>
-                                                    <div class="xm-form-cont">
-                                                        <input type="text"  placeholder="请输入电话号码" />
-                                                    </div>
-                                                </div>
-                                                <div class="am-form-group xm-form">
-                                                    <label for="user-name" class="am-form-label"><span class="test-star">*</span>工资卡号</label>
-                                                    <div class="xm-form-cont">
-                                                        <input type="text"  placeholder="请输入工资卡号" />
-                                                    </div>
-                                                </div>
-                                                <div class="am-form-group xm-form">
-                                                    <label for="user-name" class="am-form-label"><span class="test-star">*</span>开户银行</label>
-                                                    <div class="xm-form-cont">
-                                                        <input type="text"  placeholder="请输入开户银行" />
-                                                    </div>
-                                                </div>
-                                                <div class="am-form-group xm-form">
-                                                    <label for="user-name" class="am-form-label"><span class="test-star">*</span>开户姓名</label>
-                                                    <div class="xm-form-cont">
-                                                        <input type="text"  placeholder="请输入开户姓名" />
-                                                    </div>
-                                                </div>
-                                                <div class="am-form-group xm-form">
-                                                    <label for="user-name" class="am-form-label"><span class="test-star">*</span>工资卡图片</label>
-                                                    <div class="xm-form-cont">
-
-                                                        <div class="xm-add-style">
-                                                            <a href="javascript::"><img src="../../assets/img/icon-add.png" /></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            <div class="am-form-group xm-form">
-                                                <label for="user-phone" class="am-form-label"><span class="test-star">*</span>社保缴纳日期</label>
+                                                <label for="user-phone" class="am-form-label"><span class="test-star">*</span>毕业院校</label>
                                                 <div class="xm-form-cont">
-                                                    <div class="am-input-group input-group">
-                                                        <input type="text" class="am-form-field tpl-form-no-bg" placeholder="社保缴纳日期" data-am-datepicker=""/>
-                                                        <span class="am-input-group-label datepickerbutton">
-                                                            <i class="icon-th am-icon-calendar"></i>
-                                                        </span>
-                                                    </div>
+                                                    <select>
+                                                        <option value="请选择">请选择</option>
+                                                        <option value="山东大学">山东大学</option>
+                                                        <option value="北京大学">北京大学</option>
+                                                        <option value="清华大学">清华大学</option>
+                                                        <option value="北京科技大学">北京科技大学</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="am-form-group xm-form">
-                                                <label for="user-phone" class="am-form-label"><span class="test-star">*</span>公积金缴纳日期</label>
+                                                <label for="user-phone" class="am-form-label"><span class="test-star">*</span>学历</label>
                                                 <div class="xm-form-cont">
-                                                    <div class="am-input-group input-group">
-                                                        <input type="text" class="am-form-field tpl-form-no-bg" placeholder="公积金缴纳日期" data-am-datepicker=""/>
-                                                        <span class="am-input-group-label datepickerbutton">
-                                                            <i class="icon-th am-icon-calendar"></i>
-                                                        </span>
-                                                    </div>
+                                                    <select>
+                                                        <option value="请选择">请选择</option>
+                                                        <option value="专科">专科</option>
+                                                        <option value="本科">本科</option>
+                                                        <option value="硕士">硕士</option>
+                                                        <option value="博士">博士</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="am-form-group xm-form">
-                                                <label for="user-phone" class="am-form-label"><span class="test-star">*</span>资料提交</label>
+                                                <label for="user-name" class="am-form-label"><span class="test-star">*</span>专业</label>
                                                 <div class="xm-form-cont">
-                                                    <div class="am-form-group mt3">
-                                                        <label class="am-radio-inline">
-                                                            <input type="radio" name="radio14" value="齐全" data-am-ucheck="checkbox" checked="checked">齐全
-                                                        </label>
-                                                        <label class="am-radio-inline">
-                                                            <input type="radio" name="radio14" value="不齐全" data-am-ucheck="checkbox" >不齐全
-                                                        </label>
-                                                    </div>
+                                                    <input type="text"  placeholder="请输入专业名称" />
                                                 </div>
-                                            </div> 
+                                            </div>
                                             <div class="am-form-group xm-form">
-                                                    <label for="user-name" class="am-form-label"><span class="test-star">*</span>资料提交</label>
-                                                    <div class="xm-form-cont">
+                                                <label for="user-name" class="am-form-label"><span class="test-star">*</span>紧急联系人</label>
+                                                <div class="xm-form-cont">
+                                                    <input type="text"  placeholder="请输入联系人的名字" />
+                                                </div>
+                                            </div>
+                                            <div class="am-form-group xm-form">
+                                                <label for="user-name" class="am-form-label"><span class="test-star">*</span>紧急联系人电话</label>
+                                                <div class="xm-form-cont">
+                                                    <input type="text"  placeholder="请输入电话号码" />
+                                                </div>
+                                            </div>
+                                            <div class="am-form-group xm-form">
+                                                <label for="user-name" class="am-form-label"><span class="test-star">*</span>工资卡号</label>
+                                                <div class="xm-form-cont">
+                                                    <input type="text"  placeholder="请输入工资卡号" />
+                                                </div>
+                                            </div>
+                                            <div class="am-form-group xm-form">
+                                                <label for="user-name" class="am-form-label"><span class="test-star">*</span>开户银行</label>
+                                                <div class="xm-form-cont">
+                                                    <input type="text"  placeholder="请输入开户银行" />
+                                                </div>
+                                            </div>
+                                            <div class="am-form-group xm-form">
+                                                <label for="user-name" class="am-form-label"><span class="test-star">*</span>开户姓名</label>
+                                                <div class="xm-form-cont">
+                                                    <input type="text"  placeholder="请输入开户姓名" />
+                                                </div>
+                                            </div>
+                                            <div class="am-form-group xm-form">
+                                                <label for="user-name" class="am-form-label"><span class="test-star">*</span>工资卡图片</label>
+                                                <div class="xm-form-cont">
 
                                                         <div class="xm-add-style">
-                                                            <a href="javascript::"><img src="../../assets/img/icon-add.png" />
-                                                            </a>
-                                                            <div class="">
-                                                                <input type="text" placeholder="资料名称">
+                                                                <ul>
+                                                                   
+                                                                    <li>
+                                                                        <div class="add-pic">
+                                                                            <img src="../../assets/img/add-pic.svg" />
+                                                                            <p>上传图片</p>
+                                                                            <input type="file" name="file" id="file" class="file" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
+        
+                                                                        </div>
+                                                                       
+                                                                     
+                                                                        
+                                                                    </li>
+                                                                </ul>
+                                                               
+                                                                
                                                             </div>
-                                                        </div>
-                                                    </div>
                                                 </div>
-                                            <div class="am-form-group xm-form">
-                                                <label for="user-phone" class="am-form-label"><span class="test-star">*</span>是否离职</label>
+                                            </div>
+
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"><span class="test-star">*</span>社保缴纳日期</label>
+                                            <div class="xm-form-cont">
+                                                <div class="am-input-group input-group">
+                                                    <input type="text" class="am-form-field tpl-form-no-bg" placeholder="社保缴纳日期" data-am-datepicker=""/>
+                                                    <span class="am-input-group-label datepickerbutton">
+                                                        <i class="icon-th am-icon-calendar"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"><span class="test-star">*</span>公积金缴纳日期</label>
+                                            <div class="xm-form-cont">
+                                                <div class="am-input-group input-group">
+                                                    <input type="text" class="am-form-field tpl-form-no-bg" placeholder="公积金缴纳日期" data-am-datepicker=""/>
+                                                    <span class="am-input-group-label datepickerbutton">
+                                                        <i class="icon-th am-icon-calendar"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"><span class="test-star">*</span>资料提交</label>
+                                            <div class="xm-form-cont">
+                                                <div class="am-form-group mt3">
+                                                    <label class="am-radio-inline">
+                                                        <input type="radio" name="radio14" value="齐全" data-am-ucheck="checkbox" checked="checked">齐全
+                                                    </label>
+                                                    <label class="am-radio-inline">
+                                                        <input type="radio" name="radio14" value="不齐全" data-am-ucheck="checkbox" >不齐全
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="am-form-group xm-form">
+                                                <label for="user-name" class="am-form-label"><span class="test-star">*</span>资料提交</label>
                                                 <div class="xm-form-cont">
-                                                    <div class="am-form-group mt3">
-                                                        <label class="am-radio-inline">
-                                                            <input type="radio" name="radio15" value="yes" data-am-ucheck="checkbox" checked="checked">是
-                                                        </label>
-                                                        <label class="am-radio-inline">
-                                                            <input type="radio" name="radio15" value="no" data-am-ucheck="checkbox" >否
-                                                        </label>
+
+                                                    <div class="xm-add-style">
+                                                        <ul>
+                                                            <li>
+                                                                 <img src="../../assets/img/up.jpg"  width="150px"/>
+                                                                 <span class="fa fa-close"></span>
+                                                                 <p>资料名称</p>
+                                                            </li>
+                                                            <li>
+                                                                <div class="add-pic">
+                                                                    <img src="../../assets/img/add-pic.svg" />
+                                                                    <p>上传图片</p>
+                                                                    <input type="file" name="file" id="file" class="file" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
+
+                                                                </div>
+                                                                <div class="xm-editor">
+                                                                    <input type="text" placeholder="资料名称">
+                                                                    <span class="fa fa-pencil"></span>
+                                                                </div>
+                                                             
+                                                                
+                                                            </li>
+                                                        </ul>
+                                                       
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="am-form-group xm-form">
-                                                <label for="user-phone" class="am-form-label"><span class="test-star">*</span>离职日期</label>
-                                                <div class="xm-form-cont">
-                                                    <div class="am-input-group input-group">
-                                                        <input type="text" class="am-form-field tpl-form-no-bg" placeholder="离职日期" data-am-datepicker=""/>
-                                                        <span class="am-input-group-label datepickerbutton">
-                                                            <i class="icon-th am-icon-calendar"></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div> 
-                                            <div class="am-form-group xm-form">
-                                                <div class="xm-form-cont form-btn-group mt30 mb30">
-                                                    <button type="button" class="am-btn am-btn-primary">确定</button>
-                                                    <button type="button" class="am-btn am-btn-default">取消</button>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"><span class="test-star">*</span>是否离职</label>
+                                            <div class="xm-form-cont">
+                                                <div class="am-form-group mt3">
+                                                    <label class="am-radio-inline">
+                                                        <input type="radio" name="radio15" value="yes" data-am-ucheck="checkbox" checked="checked">是
+                                                    </label>
+                                                    <label class="am-radio-inline">
+                                                        <input type="radio" name="radio15" value="no" data-am-ucheck="checkbox" >否
+                                                    </label>
                                                 </div>
                                             </div>
-                                        </form>
+                                        </div>
+                                        <div class="am-form-group xm-form">
+                                            <label for="user-phone" class="am-form-label"><span class="test-star">*</span>离职日期</label>
+                                            <div class="xm-form-cont">
+                                                <div class="am-input-group input-group">
+                                                    <input type="text" class="am-form-field tpl-form-no-bg" placeholder="离职日期" data-am-datepicker=""/>
+                                                    <span class="am-input-group-label datepickerbutton">
+                                                        <i class="icon-th am-icon-calendar"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="am-form-group xm-form">
+                                            <div class="xm-form-cont form-btn-group mt30 mb30">
+                                                <button type="button" class="am-btn am-btn-primary">确定</button>
+                                                <button type="button" class="am-btn am-btn-default">取消</button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
 

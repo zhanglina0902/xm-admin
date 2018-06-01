@@ -71,8 +71,8 @@ a:hover {
     position: relative;
     top:-2px;
     display: inline-block;
-    width: 26px;
-    line-height: 26px;
+    width: 20px;
+    line-height: 20px;
 }
 .right-nav-icon img{
     width: 100%;
@@ -179,7 +179,7 @@ a:hover {
     top:60px;
     bottom:0;
     height: 100%;
-    z-index: 9999;
+    z-index: 999;
 }
 /* left 滚动条样式 */
 .xm-scroll{

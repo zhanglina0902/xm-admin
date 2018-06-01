@@ -10,6 +10,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <link rel="icon" type="image/png" href="../../assets/i/favicon.ico" />
     <link rel="stylesheet" href="../../assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../../assets/css/iconfont.css" />
     <link rel="stylesheet" href="../../assets/css/amazeui.css" />
     <link rel="stylesheet" href="../../assets/css/plugin.css" />
     <link rel="stylesheet" href="../../assets/css/global.css" />
@@ -126,7 +127,7 @@
                                 <div class="btn-group am-fl">
                                     <a class="am-btn am-radius am-btn-primary" href="员工花名册-新增.html">新增</a>
                                     <a class="am-btn am-radius am-btn-secondary">启用</a>
-                                    <a class="am-btn am-radius am-btn-third">导入</a>
+                                    <a class="am-btn am-radius am-btn-third" type="button" data-am-modal="{target: '#my-modal'}">导入</a>
                                     <a class="am-btn am-radius am-btn-four">导出</a>
                                     <a class="am-btn am-radius am-btn-default">启用</a>
                                     <a class="am-btn am-radius am-btn-default" disabled="disabled">删除</a>
@@ -345,11 +346,61 @@
             </div>     
         </div>    
     </div>
+
+    <!-- 导入 -->
+    <div class="am-modal am-modal-no-btn" tabindex="-1" id="my-modal">
+            <div class="am-modal-dialog">
+              <div class="am-modal-hd">导入
+                <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="am-close">&times;</a>
+              </div>
+              <div class="am-modal-bd">
+                  <div class="xm-daoru">
+                        <div class="am-cf xm-daoru-warning"><span class="fa fa-info-circle"></span>导入文件必须是XLX，XLSX格式</div>
+                        <div class="xm-daoru-select mt20">
+                            <select>
+                                <option value="请选择">请选择</option>
+                                <option value="基础信息">基础信息</option>
+                                <option value="账号信息">账号信息</option>
+                                <option value="扩展信息">扩展信息</option>
+                            </select>
+                        </div>
+                        <div class="am-cf mt20">
+                            <div class="xm-form-up">
+                                    <span for="">文件</span>
+                                    <input type="file" name="upfile" id="upfile"/>
+                                    <input id="uploadBtn" type="submit" value="开始上传" />
+
+                            </div>
+                            
+                               
+                           
+
+                        </div>
+                        <hr>
+                        <div class="xm-daoru-progress">
+                            <span class="desc">导入进度</span>
+                            <span class="progress">
+                                <div class="am-progress tpl-progress am-progress-striped"><div class="am-progress-bar am-progress-bar-success" style="width:45%"></div></div>
+                            </span>
+                            <span class="percent">45%</span>
+
+                        </div>
+
+
+                  </div>
+               
+              </div>
+            </div>
+          </div>
     <script src="../../assets/js/libs/jquery.min.js"></script>
     <script src="../../assets/js/libs/amazeui.min.js"></script>
     <script src="../../assets/js/plugins/jquery.slimscroll.min.js"></script> 
     <script src="../../assets/js/plugins/pagination/jquery.pagination.js"></script> 
     <script src="../../assets/js/main.js"></script>
+    <script>
+    $('#my-modal').modal(options);
+    </script>
+    
    
    
   
