@@ -25,18 +25,9 @@
                 <img src="../../assets/img/xm-logo.svg" alt="logo"/>
             </a>
         </div>
-        <!-- admin middle menu -->
-        <div class="group-nav">
-            <a href="../工作台/工作台.html" >工作台</a>
-            <a href="../组织架构/组织架构.html"  class="active">组织架构</a>
-            <a href="../员工管理/员工花名册.html" >员工管理</a>
-            <a href="" >角色权限</a>
-            <a href="" >设置</a>
-        </div>
         <!-- right account -->
         <div class="am-collapse am-topbar-collapse" >
             <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list ">
-                
                 <li >
                     <a class="am-dropdown-toggle" href="javascript:;">
                         <span class="right-nav-icon"><img src="../../assets/img/notification.svg"><span class="notice"></span></span>
@@ -48,11 +39,10 @@
                         <span class="tpl-header-list-user-nick">新博新美第一个用户</span>
                     </a>
                 </li>
-               
                 <li>
                     <div class="account-role">
-                        <a href="" >普通用户</a>
-                        <a href="" class="am-active">管理员</a>
+                        <a href="" class="am-active">普通用户</a>
+                        <a href="" >管理员</a>
                     </div>
                 </li>
             </ul>
@@ -93,6 +83,92 @@
                 <div class="contmain dis-box">
                     <div class="right-cont" >
                         <div class="info-box  xm-tablesbox-1">
+                            
+                            <div class="tablist">
+                                <ul>
+                                    <li>
+                                        <a href="" class="active">全部</a>
+                                    </li>
+                                    <li>
+                                        <a href="">已通过</a>
+                                    </li>
+                                    <li>
+                                        <a href="">待审批</a>
+                                    </li>
+                                    <li>
+                                        <a href="">审核中</a>
+                                    </li>
+                                    <li>
+                                        <a href="">未通过</a>
+                                    </li>
+                                    <li>
+                                        <a href="">已延期</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="am-cf mt15">
+                                <form class="am-form am-form-horizontal">
+                                    <div class="listform am-cf">
+                                        <div class="form-cell">
+                                            <select>
+                                                <option value="申请岗位">申请部门</option>
+                                                <option value="运营">运营</option>
+                                                <option value="销售">销售</option>
+                                                <option value="技术">技术</option>
+                                                <option value="人力">人力</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-cell">
+                                            <select>
+                                                <option value="申请岗位">申请岗位</option>
+                                                <option value="技术">技术</option>
+                                                <option value="美选">美选</option>
+                                                <option value="店主">店主</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-cell">
+                                            <select>
+                                                <option value="申请人">申请人</option>
+                                                <option value="技术">技术</option>
+                                                <option value="运营">运营</option>
+                                                <option value="人力">人力</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <div class="am-input-group form-cell">
+                                            <input type="text" class="am-form-field tpl-form-no-bg" placeholder="申请时间" data-am-datepicker=""/>
+                                            <span class="am-input-group-label datepickerbutton">
+                                                <i class="icon-th am-icon-calendar"></i>
+                                            </span>
+                                        </div>
+                                        <div class="form-cell">
+                                                <select>
+                                                    <option value="申请人">是否支持转岗</option>
+                                                    <option value="是">是</option>
+                                                    <option value="否">否</option>
+                                                </select>
+                                            </div>
+                                        <div class="form-cell">
+                                            <select>
+                                                <option value="申请人">是否支持内推</option>
+                                                <option value="是">是</option>
+                                                <option value="否">否</option>
+                                            </select>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="p15">
+                                        <div class="am-form-group mt3">
+                                            <label class="am-radio-inline">
+                                                <input type="radio" name="radio11" value="yes" data-am-ucheck="checkbox" checked="checked">增编
+                                            </label>
+                                            <label class="am-radio-inline">
+                                                <input type="radio" name="radio11" value="no" data-am-ucheck="checkbox" > 增补
+                                            </label>
+                                        </div>
+                                    </div> 
+                                </form>
+                            </div>
                             <div class="info-title am-cf">
                                 <div class="btn-group am-fl">
                                     <a class="am-btn am-radius am-btn-primary" href="">新增</a>
@@ -148,13 +224,12 @@
                                             <div class="xm-handlebox"  style="display:block" >
                                                 <div class="xm-popcont">
                                                     <div class="am-cf">
-                                                        <a href="">查看</a>
-                                                        <a href="">发布</a>
-                                                        <a href="">移交</a>
-                                                        <a href="">启用</a>
-                                                        <a href="">禁用</a>
-                                                        <a href="">删除</a>
-                                                        
+                                                        <a href=""><span class="icon xm-icon-xingzhuang"></span></a>
+                                                        <a href=""><span class="icon xm-icon-fabu"></span></a>
+                                                        <a href=""><span class="icon xm-icon-yijiao"></span></a>
+                                                        <a href=""><span class="icon xm-icon-qiyong"></span></a>
+                                                        <a href=""><span class="icon xm-icon-jinyong"></span></a>
+                                                        <a href=""><span class="icon xm-icon-delete"></span></a>
                                                     </div>
                                                 </div>
                                                 <div class="xm-popcaret"></div>
@@ -182,13 +257,12 @@
                                             <div class="xm-handlebox"  style="display:block" >
                                                 <div class="xm-popcont">
                                                     <div class="am-cf">
-                                                        <a href="">查看</a>
-                                                        <a href="">发布</a>
-                                                        <a href="">移交</a>
-                                                        <a href="">启用</a>
-                                                        <a href="">禁用</a>
-                                                        <a href="">删除</a>
-                                                        
+                                                        <a href=""><span class="icon xm-icon-xingzhuang"></span></a>
+                                                        <a href=""><span class="icon xm-icon-fabu"></span></a>
+                                                        <a href=""><span class="icon xm-icon-yijiao"></span></a>
+                                                        <a href=""><span class="icon xm-icon-qiyong"></span></a>
+                                                        <a href=""><span class="icon xm-icon-jinyong"></span></a>
+                                                        <a href=""><span class="icon xm-icon-delete"></span></a>
                                                     </div>
                                                 </div>
                                                 <div class="xm-popcaret"></div>
@@ -216,13 +290,12 @@
                                             <div class="xm-handlebox"  style="display:block" >
                                                 <div class="xm-popcont">
                                                     <div class="am-cf">
-                                                        <a href="">查看</a>
-                                                        <a href="">发布</a>
-                                                        <a href="">移交</a>
-                                                        <a href="">启用</a>
-                                                        <a href="">禁用</a>
-                                                        <a href="">删除</a>
-                                                        
+                                                        <a href=""><span class="icon xm-icon-xingzhuang"></span></a>
+                                                        <a href=""><span class="icon xm-icon-fabu"></span></a>
+                                                        <a href=""><span class="icon xm-icon-yijiao"></span></a>
+                                                        <a href=""><span class="icon xm-icon-qiyong"></span></a>
+                                                        <a href=""><span class="icon xm-icon-jinyong"></span></a>
+                                                        <a href=""><span class="icon xm-icon-delete"></span></a>
                                                     </div>
                                                 </div>
                                                 <div class="xm-popcaret"></div>
@@ -250,13 +323,12 @@
                                             <div class="xm-handlebox"  style="display:block" >
                                                 <div class="xm-popcont">
                                                     <div class="am-cf">
-                                                        <a href="">查看</a>
-                                                        <a href="">发布</a>
-                                                        <a href="">移交</a>
-                                                        <a href="">启用</a>
-                                                        <a href="">禁用</a>
-                                                        <a href="">删除</a>
-                                                        
+                                                        <a href=""><span class="icon xm-icon-xingzhuang"></span></a>
+                                                        <a href=""><span class="icon xm-icon-fabu"></span></a>
+                                                        <a href=""><span class="icon xm-icon-yijiao"></span></a>
+                                                        <a href=""><span class="icon xm-icon-qiyong"></span></a>
+                                                        <a href=""><span class="icon xm-icon-jinyong"></span></a>
+                                                        <a href=""><span class="icon xm-icon-delete"></span></a>
                                                     </div>
                                                 </div>
                                                 <div class="xm-popcaret"></div>
@@ -284,13 +356,12 @@
                                             <div class="xm-handlebox"  style="display:block" >
                                                 <div class="xm-popcont">
                                                     <div class="am-cf">
-                                                        <a href="">查看</a>
-                                                        <a href="">发布</a>
-                                                        <a href="">移交</a>
-                                                        <a href="">启用</a>
-                                                        <a href="">禁用</a>
-                                                        <a href="">删除</a>
-                                                        
+                                                        <a href=""><span class="icon xm-icon-xingzhuang"></span></a>
+                                                        <a href=""><span class="icon xm-icon-fabu"></span></a>
+                                                        <a href=""><span class="icon xm-icon-yijiao"></span></a>
+                                                        <a href=""><span class="icon xm-icon-qiyong"></span></a>
+                                                        <a href=""><span class="icon xm-icon-jinyong"></span></a>
+                                                        <a href=""><span class="icon xm-icon-delete"></span></a>
                                                     </div>
                                                 </div>
                                                 <div class="xm-popcaret"></div>

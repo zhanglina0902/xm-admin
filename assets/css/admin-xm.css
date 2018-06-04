@@ -122,6 +122,20 @@
 .xm-popcont a{
     display:inline-block;
 }
+.xm-popcont a{
+    color:#666666;
+}
+.xm-popcont a:hover{
+    color:#F45138;
+}
+.xm-popcont a p{
+    padding:0;
+    margin:0;
+    font-size:12px;
+    text-align: center;
+    display: none;
+}
+
 .xm-popcont .w120{
     min-width: 12rem;
 }
@@ -743,6 +757,65 @@
     height: 35px;
     line-height: 35px;
     padding:0 15px;
+}
+/* zhaopin */
+.mt15{
+    margin-top: 15px;;
+}
+.listform ul{
+   display: table;
+    
+}
+.listform ul li{
+    display: table-cell;
+    margin:0;
+    padding:0;
+    position: relative;
+}
+.form-cell{
+    float: left;
+    width:150px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.tablist{
+    padding-top: 30px;
+}
+.tablist ul{
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center
+}
+.tablist ul li{
+    display: inline-block;
+    text-align: center;
+    width:140px;
+    margin-top: 10px;;
+}
+.tablist ul li a{
+    display: block;
+    border:1px solid #F45138;
+    height: 38px;
+    line-height: 38px;
+    border-right:0;
+    font-size:14px;
+}
+.tablist ul li a.active{
+    background: #F45138;
+    color:#ffffff;
+}
+.tablist ul li:first-child a{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.tablist ul li:last-child a{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right:1px solid #F45138
 }
 
 
