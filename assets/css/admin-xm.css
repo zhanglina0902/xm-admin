@@ -577,7 +577,7 @@
 .xm-daoru{
     font-size: 14px;
     text-align: left;
-    padding:20px 0;
+    padding:20px;
 }
 .xm-daoru-warning span{
     color:#F5900D;
@@ -586,20 +586,97 @@
 }
 .xm-daoru-select select{
     border-radius: 5px;
-    height: 36px;
-    line-height: 36px;
+    height: 32px;
+    line-height: 32px;
     width:120px;
     text-indent: 10px;
+    box-shadow: none;
+    outline: none;
+    border:1px solid #ccc;
 }
 .mt20{
     margin-top: 20px;
 }
 .xm-daoru-progress{
     display: flex;
-    justify-content: space-around
+    justify-content: space-between;
 }
 .progress{
     width: 70%;
+}
+.upload-btn{
+    height: 32px;
+    line-height: 32px;
+    padding:0 15px;
+    border-radius: 5px;
+}
+.ml15{
+    margin-left: 15px;
+}
+.xm-progress{
+    height: 5px;
+    line-height: 5px;
+    border-radius: 10px;
+    margin-bottom: 0;
+    margin-top:10px;
+}
+.am-progress-bar-blue{
+    background-color:#4A90E2;
+}
+
+/* daochu */
+.part-two{
+    background: #ffffff;
+    display: flex;
+    height: 350px;
+}
+.part-two-left{
+    width: 50%;
+    text-align: left;
+    background: #F6F6F6;
+    max-height: 350px;
+    overflow-y: auto;
+}
+.part-two-right{
+    width:50%;
+    border-left:1px solid #cccccc;
+    max-height: 350px;
+    overflow-y: auto;
+    text-align: left;
+}
+.mb15{
+    margin-bottom: 15px;
+}
+.dc-contlist ul{
+    margin:0;
+    padding:0;
+}
+.dc-contlist ul li{
+    line-height: 30px;
+    height: 30px;
+    margin-bottom: 0;
+    font-size: 14px;
+    margin-top: 6px;
+    text-align: left;
+    width: 100%;
+}
+.dc-contlist ul li span{
+    float: right;
+    position: relative;
+    top:0px;
+    cursor: pointer;
+}
+/* delete */
+.xm-deletebox{
+    padding:20px 0;
+    text-align: left;
+}
+.delete-textarea{
+    width:100%;
+    margin-top: 15px;
+    border:1px solid #ccc;
+    text-indent: 5px;
+    background:rgba(246,246,246,1);
 }
 
 /* 员工花名册 */
@@ -667,6 +744,10 @@
     line-height: 35px;
     padding:0 15px;
 }
+
+
+
+
 
 
 

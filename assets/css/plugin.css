@@ -177,6 +177,12 @@
 .dis-table{
     display: table
 }
+.test-red{
+    color: #F45138;
+}
+.bg-white{
+    background: #ffffff;
+}
 
 
 /*------------- 分页---------------- */
@@ -184,7 +190,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
 .pagination-test{
     margin: 0;
@@ -196,8 +201,6 @@
 .xm-pagination-box .xm-form-cont{
     margin-left:0;
     margin-right:20px;
-
-
 }
 .xm-pagination-box .xm-form-cont select{
     padding:6px 12px;
@@ -282,7 +285,6 @@
     font-size: 12px;
     width: 60px;
     border-radius: 3px;
-
 }
 
 /* tanchuceng */
@@ -291,6 +293,9 @@
 }
 .am-modal-bd{
     padding:0;
+}
+.am-modal-hd + .am-modal-bd{
+    padding-top:1px;
 }
 
 .am-modal-footer{
@@ -308,6 +313,101 @@
     margin:10px 10%;
     width:30%;
 }
+/* 上传 */
+.uploader{
+    position:relative;
+    display:inline-block;
+    overflow:hidden;
+    cursor:default;
+    padding:0;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    }
+.filename{
+    float:left;
+    display:inline-block;
+    outline:0 none;
+    height:32px;
+    width:180px;
+    margin:0;
+    padding:8px 10px;
+    overflow:hidden;
+    cursor:default;
+    border:1px solid;
+    border-right:0;
+    color:#777;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    -moz-border-radius:5px 0px 0px 5px;
+    -webkit-border-radius:5px 0px 0px 5px;
+    border-radius:5px 0px 0px 5px;
+    background:#ffffff;
+    border-color:#ccc; 
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.blower-button{
+    float:left;
+    height:32px;
+    display:inline-block;
+    outline:0 none;
+    margin:0;
+    cursor:pointer;
+    border:1px solid;
+    font-size:14px;
+    -moz-border-radius:0px 5px 5px 0px;
+    -webkit-border-radius:0px 5px 5px 0px;
+    border-radius:0px 5px 5px 0px;
+    }
+.uploader input[type=file]{
+    position:absolute;
+    top:0; right:0; bottom:0;
+    border:0;
+    padding:0; margin:0;
+    height:32px;
+    cursor:pointer;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity: 0;
+    opacity:0;
+    }
+    
+input[type=button]::-moz-focus-inner{
+    padding:0; 
+    border:0 none; 
+    -moz-box-sizing:content-box;
+}
+input[type=button]::-webkit-focus-inner{
+    padding:0; 
+    border:0 none; 
+    -webkit-box-sizing:content-box;
+}
+input[type=text]::-moz-focus-inner{
+    padding:0; 
+    border:0 none; 
+    -moz-box-sizing:content-box;
+}
+input[type=text]::-webkit-focus-inner{
+    padding:0; 
+    border:0 none; 
+    -webkit-box-sizing:content-box;
+}
+
+
+    /* Red Color Scheme ------------------------ */
+
+.red.blower-button{
+    color:#fff;
+    background:rgba(244,81,56,1);
+    box-shadow:0px 1px 2px 0px rgba(244,81,56,0.5);
+    border:1px solid rgba(244,81,56,1);
+    }
+    .red:hover .blower-button{
+    background:rgba(244,81,56,1);
+    }
+    
 
 
 

@@ -128,9 +128,9 @@
                                     <a class="am-btn am-radius am-btn-primary" href="员工花名册-新增.html">新增</a>
                                     <a class="am-btn am-radius am-btn-secondary">启用</a>
                                     <a class="am-btn am-radius am-btn-third" type="button" data-am-modal="{target: '#my-modal'}">导入</a>
-                                    <a class="am-btn am-radius am-btn-four">导出</a>
+                                    <a class="am-btn am-radius am-btn-four" type="button"  data-am-modal="{target: '#daochu-modal'}">导出</a>
                                     <a class="am-btn am-radius am-btn-default">启用</a>
-                                    <a class="am-btn am-radius am-btn-default" disabled="disabled">删除</a>
+                                    <a class="am-btn am-radius am-btn-default"  type="button" data-am-modal="{target: '#delete-modal'}">删除</a>
                                 </div>
                                 <div class="search bar8 am-fr"> 
                                     <form> 
@@ -138,7 +138,7 @@
                                     </form> 
                                 </div> 
                             </div>
-                            <table class="am-table admin-listtable table-h"  >
+                            <table class="am-table admin-listtable"  >
                                 <thead>
                                     <th class="table-check">
                                         <label class="am-checkbox">
@@ -349,56 +349,169 @@
 
     <!-- 导入 -->
     <div class="am-modal am-modal-no-btn" tabindex="-1" id="my-modal">
-            <div class="am-modal-dialog">
-              <div class="am-modal-hd">导入
-                <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="am-close">&times;</a>
-              </div>
-              <div class="am-modal-bd">
-                  <div class="xm-daoru">
-                        <div class="am-cf xm-daoru-warning"><span class="fa fa-info-circle"></span>导入文件必须是XLX，XLSX格式</div>
-                        <div class="xm-daoru-select mt20">
-                            <select>
-                                <option value="请选择">请选择</option>
-                                <option value="基础信息">基础信息</option>
-                                <option value="账号信息">账号信息</option>
-                                <option value="扩展信息">扩展信息</option>
-                            </select>
-                        </div>
-                        <div class="am-cf mt20">
-                            <div class="xm-form-up">
-                                    <span for="">文件</span>
-                                    <input type="file" name="upfile" id="upfile"/>
-                                    <input id="uploadBtn" type="submit" value="开始上传" />
-
-                            </div>
-                            
-                               
-                           
-
-                        </div>
-                        <hr>
-                        <div class="xm-daoru-progress">
-                            <span class="desc">导入进度</span>
-                            <span class="progress">
-                                <div class="am-progress tpl-progress am-progress-striped"><div class="am-progress-bar am-progress-bar-success" style="width:45%"></div></div>
-                            </span>
-                            <span class="percent">45%</span>
-
-                        </div>
-
-
-                  </div>
-               
-              </div>
+        <div class="am-modal-dialog">
+            <div class="am-modal-hd">导入
+            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="am-close">&times;</a>
             </div>
-          </div>
+            <div class="am-modal-bd">
+                <div class="xm-daoru">
+                    <div class="am-cf xm-daoru-warning"><span class="fa fa-info-circle"></span>导入文件必须是XLX，XLSX格式</div>
+                    <div class="xm-daoru-select mt20">
+                        <select>
+                            <option value="请选择">请选择</option>
+                            <option value="基础信息">基础信息</option>
+                            <option value="账号信息">账号信息</option>
+                            <option value="扩展信息">扩展信息</option>
+                        </select>
+                    </div>
+                    <div class="am-cf mt20">
+                        <div class="uploader am-fl">
+                            <input type="text" class="filename" placeholder="No file selected..."  />
+                            <input type="button" name="file" class="blower-button red" value="浏览"/>
+                            <input type="file" size="30"/>
+                        </div>
+                        <div class="am-fl">
+                            <button type="button" class="am-btn am-btn-default upload-btn  ml15 ">
+                                    开始导入
+                            </button>
+                            <button type="button" class="am-btn am-btn-default upload-btn  ml15 ">
+                                下载模板
+                            </button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="xm-daoru-progress">
+                        <span class="desc">导入进度</span>
+                        <span class="progress">
+                            <div class="am-progress xm-progress"><div class="am-progress-bar am-progress-bar-blue" style="width:45%"></div></div>
+                        </span>
+                        <span class="percent">45%</span>
+                    </div>
+                    <div class="am-text-danger mt3">导入错误提示！</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- 导出 -->
+     <div class="am-modal " tabindex="-1" id="daochu-modal">
+        <div class="am-modal-dialog">
+            <div class="am-modal-hd">导出
+            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="am-close">&times;</a>
+            </div>
+            <div class="am-modal-bd">
+                <div class="part-two">
+                    <div class="part-two-left">
+                        <div class="am-u-lg-12">
+                            <div class="pt15">选择要导出的内容</div>
+                            <div class="checklist">
+                                <label class="am-checkbox am-text-right mb15">
+                                    <input type="checkbox" value="" data-am-ucheck="checkbox">全部
+                                </label>
+                                <label class="am-checkbox am-text-right mb15">
+                                    <input type="checkbox" value="" data-am-ucheck="checkbox">工号
+                                </label>
+                                <label class="am-checkbox am-text-right mb15">
+                                    <input type="checkbox" value="" data-am-ucheck="checkbox">姓名
+                                </label>
+                                <label class="am-checkbox am-text-right mb15">
+                                    <input type="checkbox" value="" data-am-ucheck="checkbox">部门
+                                </label>
+                                <label class="am-checkbox am-text-right mb15">
+                                    <input type="checkbox" value="" data-am-ucheck="checkbox">职位
+                                </label>
+                            </div>
+                        </div>                          
+                    </div>
+                    <div class="part-two-right">
+                        <div class="am-u-lg-12">
+                            <div class="pt15">选择要导出的内容</div>
+                            <div class="dc-contlist">
+                                <ul>
+                                    <li>
+                                        工号 <span class="icon xm-icon-delete-2"></span>
+                                    </li>
+                                    <li>
+                                        工号 <span class="icon xm-icon-delete-2"></span>
+                                    </li>
+                                    <li>
+                                        工号 <span class="icon xm-icon-delete-2"></span>
+                                    </li> 
+                                    <li>
+                                        工号 <span class="icon xm-icon-delete-2"></span>
+                                    </li>
+                                    <li>
+                                        工号 <span class="icon xm-icon-delete-2"></span>
+                                    </li>
+                                    <li>
+                                        工号 <span class="icon xm-icon-delete-2"></span>
+                                    </li>  
+                                    <li>
+                                        工号 <span class="icon xm-icon-delete-2"></span>
+                                    </li>
+                                    <li>
+                                        工号 <span class="icon xm-icon-delete-2"></span>
+                                    </li>
+                                    <li>
+                                        工号 <span class="icon xm-icon-delete-2"></span>
+                                    </li> 
+                                    <li>
+                                        工号 <span class="icon xm-icon-delete-2"></span>
+                                    </li>
+                                    <li>
+                                        工号 <span class="icon xm-icon-delete-2"></span>
+                                    </li>
+                                    <li>
+                                        工号 <span class="icon xm-icon-delete-2"></span>
+                                    </li>      
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="am-modal-footer">
+                <button type="button" class="am-btn am-btn-primary">确定</button>
+                <button type="button" class="am-btn am-btn-default" disabled="disabled">取消</button>
+            </div>
+        </div>
+    </div>
+
+     <!-- 删除 -->
+     <div class="am-modal " tabindex="-1" id="delete-modal">
+        <div class="am-modal-dialog">
+            <div class="am-modal-hd">删除
+            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="am-close">&times;</a>
+            </div>
+            <div class="am-modal-bd ">
+                <div class="am-u-lg-12 bg-white">
+                    <div class="xm-deletebox">
+                        <div class="xm-p"><span class="test-red">*</span>删除原因</div>
+                        <textarea name="" id="" cols="" rows="5" class="delete-textarea">删除原因</textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="am-modal-footer">
+                <button type="button" class="am-btn am-btn-primary">确定</button>
+                <button type="button" class="am-btn am-btn-default" disabled="disabled">取消</button>
+            </div>
+        </div>
+    </div>
     <script src="../../assets/js/libs/jquery.min.js"></script>
     <script src="../../assets/js/libs/amazeui.min.js"></script>
     <script src="../../assets/js/plugins/jquery.slimscroll.min.js"></script> 
     <script src="../../assets/js/plugins/pagination/jquery.pagination.js"></script> 
     <script src="../../assets/js/main.js"></script>
     <script>
-    $('#my-modal').modal(options);
+
+     
+        $(function(){
+            $("input[type=file]").change(function(){$(this).parents(".uploader").find(".filename").val($(this).val());});
+            $("input[type=file]").each(function(){
+            if($(this).val()==""){$(this).parents(".uploader").find(".filename").val("No file selected...");}
+            });
+        });
+        
     </script>
     
    
