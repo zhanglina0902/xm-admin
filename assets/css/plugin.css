@@ -104,7 +104,7 @@
  .am-table > thead > tr > td,
  .am-table > tbody > tr > td,
  .am-table > tfoot > tr > td {
-   padding: 15px 25px;
+   padding: 15px 20px;
    line-height: 1.6;
    vertical-align: middle;
    border-top: 1px solid transparent;
@@ -187,6 +187,7 @@
 
 /*------------- 分页---------------- */
 .xm-pagination-box{
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -299,19 +300,20 @@
 }
 
 .am-modal-footer{
-    padding:20px 10%;
-    height: 40px;
-    justify-content: space-between;
+    padding:15px;
+    height: 71px;
+    display: flex;
+    justify-content: space-evenly;
     background: #FFFFFF;
     text-align: center;
+    border-top:1px solid #cccccc;
 }
 .am-modal-footer button{
     float: left;
     display: table-cell;
     border-radius: 5px;
     display: block;
-    margin:10px 10%;
-    width:30%;
+    width:160px;
 }
 /* 上传 */
 .uploader{

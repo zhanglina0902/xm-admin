@@ -138,7 +138,7 @@
                                                             <div class="w180">
                                                                     <a href="">修改</a>
                                                                     <a href="">启用</a>
-                                                                    <a href="">删除</a>
+                                                                    <a href="javascript::" type="button" data-am-modal="{target: '#my-modal',width:260}">删除</a>
                                                             </div>
                                                         </div>
                                                         <div class="xm-popcaret"></div>
@@ -255,10 +255,24 @@
             </div>
         </div>
     </div>
+
+     <!-- 删除 -->
+     <div class="am-modal " tabindex="-1" id="my-modal">
+            <div class="am-modal-dialog">
+                <div class="am-modal-bd">
+                    <p class="xm-form-text">已删除</p>
+                </div>
+            </div>
+          </div>
+
+
     <script src="../../assets/js/libs/jquery.min.js"></script>
     <script src="../../assets/js/libs/amazeui.min.js"></script>
     <script src="../../assets/js/plugins/jquery.slimscroll.min.js"></script> 
     <script src="../../assets/js/plugins/pagination/jquery.pagination.js"></script> 
     <script src="../../assets/js/main.js"></script>
+    <script>
+        $('#my-modal').modal(options);
+    </script>
 </body>
 </html>
