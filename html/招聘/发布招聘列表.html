@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../assets/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../../assets/css/iconfont.css" />
     <link rel="stylesheet" href="../../assets/css/amazeui.css" />
+    <link rel="stylesheet" href="../../assets/js/plugins/jbox/jBox.css" />
     <link rel="stylesheet" href="../../assets/css/plugin.css" />
     <link rel="stylesheet" href="../../assets/css/global.css" />
     <link rel="stylesheet" href="../../assets/css/admin-xm.css" />
@@ -160,7 +161,7 @@
                                     <a class="am-btn am-radius am-btn-primary" href="../招聘/用人申请-新增-1.html">新增</a>
                                     <a class="am-btn am-radius am-btn-secondary">批量启用</a>
                                     <a class="am-btn am-radius am-btn-third">批量导出</a>
-                                    <a class="am-btn am-radius am-btn-default">批量启用</a>
+                                    <a class="am-btn am-radius am-btn-default" >批量启用</a>
                                     <a class="am-btn am-radius am-btn-default" disabled="disabled">批量删除</a>
                                 </div>
                                 <div class="search bar8 am-fr"> 
@@ -204,8 +205,8 @@
                                         <td class="am-text-center">已通过</td>
                                         <td class="am-text-center">是</td>
                                         <td class="xm-handle" >
-                                            <span class="fa fa-ellipsis-v xm-icons" ></span>
-                                            <div class="xm-handlebox"  style="display:block" >
+                                            <span class="fa fa-ellipsis-v xm-icons"  id="Tooltip-1" ></span>
+                                            <!-- <div class="xm-handlebox"  style="display:block" >
                                                 <div class="xm-popcont-1">
                                                     <div class="am-cf">
                                                         <a href="">
@@ -227,7 +228,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="xm-popcaret"></div>
-                                            </div>
+                                            </div> -->
                                         </td>
                                     </tr>
                                     <tr>
@@ -250,7 +251,7 @@
                                             <div class="xm-handlebox"  style="display:block" >
                                                 <div class="xm-popcont-1">
                                                     <div class="am-cf">
-                                                        <a href="">
+                                                        <a href="javascript::"  type="button" data-am-modal="{target: '#fabu-modal'}">
                                                             <span class="icon xm-icon-xingzhuang"></span>
                                                             <p>查看</p>
                                                         </a>
@@ -269,7 +270,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="xm-popcaret"></div>
-                                            </div>
+                                            </div> 
                                         </td>
                                     </tr>
                                     <tr>
@@ -289,7 +290,7 @@
                                         <td class="am-text-center">是</td>
                                         <td class="xm-handle" >
                                             <span class="fa fa-ellipsis-v xm-icons" ></span>
-                                            <div class="xm-handlebox"  style="display:block" >
+                                            <!-- <div class="xm-handlebox"  style="display:block" >
                                                 <div class="xm-popcont-1">
                                                     <div class="am-cf">
                                                         <a href="">
@@ -311,7 +312,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="xm-popcaret"></div>
-                                            </div>
+                                            </div> -->
                                         </td>
                                     </tr>
                                     <tr>
@@ -331,7 +332,7 @@
                                         <td class="am-text-center">是</td>
                                         <td class="xm-handle" >
                                             <span class="fa fa-ellipsis-v xm-icons" ></span>
-                                            <div class="xm-handlebox"  style="display:block" >
+                                            <!-- <div class="xm-handlebox"  style="display:block" >
                                                 <div class="xm-popcont-1">
                                                     <div class="am-cf">
                                                         <a href="">
@@ -353,7 +354,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="xm-popcaret"></div>
-                                            </div>
+                                            </div> -->
                                         </td>
                                     </tr>
                                     <tr>
@@ -373,7 +374,7 @@
                                         <td class="am-text-center">是</td>
                                         <td class="xm-handle" >
                                             <span class="fa fa-ellipsis-v xm-icons" ></span>
-                                            <div class="xm-handlebox"  style="display:block" >
+                                            <!-- <div class="xm-handlebox"  style="display:block" >
                                                 <div class="xm-popcont-1">
                                                     <div class="am-cf">
                                                         <a href="">
@@ -395,7 +396,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="xm-popcaret"></div>
-                                            </div>
+                                            </div> -->
                                         </td>
                                     </tr>
                                     <tr>
@@ -415,7 +416,7 @@
                                         <td class="am-text-center">是</td>
                                         <td class="xm-handle" >
                                             <span class="fa fa-ellipsis-v xm-icons" ></span>
-                                            <div class="xm-handlebox"  style="display:block" >
+                                            <!-- <div class="xm-handlebox"  style="display:block" >
                                                 <div class="xm-popcont-1">
                                                     <div class="am-cf">
                                                         <a href="">
@@ -437,7 +438,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="xm-popcaret"></div>
-                                            </div>
+                                            </div> -->
                                         </td>
                                     </tr>
                                 </tbody>
@@ -471,8 +472,156 @@
     <script src="../../assets/js/libs/jquery.min.js"></script>
     <script src="../../assets/js/libs/amazeui.min.js"></script>
     <script src="../../assets/js/plugins/jquery.slimscroll.min.js"></script> 
-    <script src="../../assets/js/plugins/pagination/jquery.pagination.js"></script> 
+    <script src="../../assets/js/plugins/pagination/jquery.pagination.js"></script>
+    <script src="../../assets/js/plugins/jbox/jBox.js"></script> 
     <script src="../../assets/js/main.js"></script>
+    <script>
+
+
+            // 操作
+           
+          new jBox('Tooltip', {
+            attach: '#Tooltip-1',
+            theme: 'TooltipBorderThick',
+            closeOnMouseleave: true,
+            position: {
+                x: 'left',
+                y: 'center'
+            },
+            outside: 'x',
+            pointer: 'top:15',
+            content: '<div class=xm-popcont-1><a><span class=xm-icon-xingzhuang></span><p>查看</p></a><a><span class=xm-icon-shenpi></span><p>审批</p></a><a><span class=xm-icon-xiugai></span><p>修改</p></a><a><span class=xm-icon-fabu></span><p>发布</p></a><a><span class=xm-icon-yijiao></span><p>移交</p></a><a><span class=xm-icon-qiyong></span><p>启用</p></a><a><span class=xm-icon-jinyong></span><p>禁用</p></a><a><span class=xm-icon-delete></span><p>删除</p></a></div>',
+            animation: 'move'
+            });
+        </script>
+
+
+ <!-- 查看 -->
+ <div class="am-modal " tabindex="-1" id="fabu-modal" >
+        <div class="am-modal-dialog">
+            <div class="am-modal-hd">发布招聘详情
+                <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="am-close">&times;</a>
+            </div>
+            <div class="am-modal-bd">
+                <div class="p15 am-text-left  bg-white sp-cont am-cf">
+                        <form class="am-form am-form-horizontal">
+                                <div class="am-form-group xm-form">
+                                    <label for="user-phone" class="am-form-label">职位类别</label>
+                                    <div class="xm-form-cont am-cf" >
+                                        <div class=" am-fl">
+                                            <p class="xm-form-text">技术</p>
+                                        </div>                                      
+                                    </div>
+                                </div>
+                                <div class="am-form-group xm-form">
+                                    <label for="user-phone" class="am-form-label">工作地点</label>
+                                    <div class="xm-form-cont am-cf" >
+                                        <div class="am-fl">
+                                            <p class="xm-form-text">成都</p>
+                                        </div>                                      
+                                    </div>
+                                </div>
+                                <div class="am-form-group xm-form">
+                                    <label for="user-phone" class="am-form-label">申请部门</label>
+                                    <div class="xm-form-cont am-cf" >
+                                        <div class=" am-fl">
+                                            <p class="xm-form-text">科创中心</p>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="am-form-group xm-form">
+                                    <label for="user-name" class="am-form-label">招聘人数</label>
+                                    <div class="xm-form-cont">
+                                        <div class=" am-fl">
+                                            <p class="xm-form-text">2人以上</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="am-form-group xm-form">
+                                    <label for="user-name" class="am-form-label">专业要求</label>
+                                    <div class="xm-form-cont">
+                                        <div class=" am-fl">
+                                            <p class="xm-form-text">信息管理</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="am-form-group xm-form">
+                                    <label for="user-name" class="am-form-label">工作年限</label>
+                                    <div class="xm-form-cont am-cf">
+                                        <div class=" am-fl">
+                                            <p class="xm-form-text">三年以上</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="am-form-group xm-form">
+                                    <label for="user-name" class="am-form-label">年龄</label>
+                                    <div class="xm-form-cont am-cf">
+                                        <div class=" am-fl">
+                                            <p class="xm-form-text">28岁</p>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                                <div class="am-form-group xm-form">
+                                    <label for="user-name" class="am-form-label">学历要求</label>
+                                    <div class="xm-form-cont am-cf">
+                                        <div class=" am-fl">
+                                            <p class="xm-form-text">硕士研究生 全日制 985（或者211）</p>
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="am-form-group xm-form">
+                                    <label for="user-phone" class="am-form-label">性别</label>
+                                    <div class="xm-form-cont">
+                                        <div class=" am-fl">
+                                            <p class="xm-form-text">女</p>
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="am-form-group xm-form">
+                                    <label for="user-phone" class="am-form-label">职位类型</label>
+                                    <div class="xm-form-cont am-cf" >
+                                        <div class=" am-fl">
+                                            <p class="xm-form-text">全职</p>
+                                        </div>                                       
+                                    </div>
+                                </div>
+                                <div class="am-form-group xm-form">
+                                    <label for="user-phone" class="am-form-label">是否支持转岗</label>
+                                    <div class="xm-form-cont am-cf" >
+                                        <div class=" am-fl">
+                                            <p class="xm-form-text">是</p>
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="am-form-group xm-form">
+                                    <label for="user-phone" class="am-form-label">是否支持内推</label>
+                                    <div class="xm-form-cont am-cf" >
+                                        <div class=" am-fl">
+                                            <p class="xm-form-text">是</p>
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="am-form-group xm-form">
+                                        <label for="user-phone" class="am-form-label">岗位描述</label>
+                                        <div class="xm-form-cont am-cf" >
+                                            <div class=" am-fl">
+                                                <p class="xm-form-text">岗位这人描述岗位这人描述岗位这人描述岗位这人描述岗位这人描述</p>
+                                            </div> 
+                                             
+                                        </div>
+                                    </div>
+                            </form>
+                
+                </div>
+            <div class="am-modal-footer">
+                <button type="button" class="am-btn am-btn-primary">提交</button>
+                <button type="button" class="am-btn am-btn-default" disabled="disabled">返回</button>
+            </div>
+        </div>
+    </div>
+    
+    
    
    
   

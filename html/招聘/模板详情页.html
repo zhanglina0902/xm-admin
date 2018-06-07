@@ -90,10 +90,18 @@
                                 <label for="user-phone" class="am-form-label">职位类别</label>
                                 <div class="xm-form-cont am-cf" >
                                     <div class="w168 am-fl">
-                                        <select >
-                                            <option value="产品">产品</option>
-                                            <option value="设计">设计</option>
-                                        </select>
+                                        <div class="select-div">  
+                                            <div class="select-text">产品</div>  
+                                            <div class="select-contdiv"> 
+                                                <button class="add-btn am-btn am-btn-default" type="button" data-am-modal="{target: '#xinzeng-modal'}">+新增岗位</button> 
+                                                <ul>  
+                                                    <li>产品</li>  
+                                                    <li>技术</li>  
+                                                    <li>运营</li>  
+                                                    <li>销售</li>  
+                                                </ul>  
+                                            </div>  
+                                        </div>  
                                     </div>                                      
                                 </div>
                             </div>
@@ -116,20 +124,7 @@
                                             <option value="科创中心">科创中心</option>
                                         </select>
                                     </div> 
-                                    <div class="w168 am-fl mr15">
-                                        <select >
-                                            <option value="精选">精选</option>
-                                            <option value="美选">美选</option>
-                                            <option value="优选">优选</option>
-                                        </select>
-                                    </div> 
-                                    <div class="w168 am-fl mr15">
-                                        <select >
-                                            <option value="设计">设计</option>
-                                            <option value="技术">技术</option>
-                                            <option value="产品">产品</option>
-                                        </select>
-                                    </div>                                      
+                                                                  
                                 </div>
                             </div>
                             <div class="am-form-group xm-form">
@@ -354,7 +349,25 @@
             </div>
         </div>
     </div>
-
+  <!-- 新增岗位 -->
+  <div class="am-modal " tabindex="-1" id="xinzeng-modal">
+        <div class="am-modal-dialog">
+            <div class="am-modal-hd">添加岗位
+                <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="am-close">&times;</a>
+            </div>
+            <div class="am-modal-bd">
+                <div class="p15 am-text-left  bg-white sp-cont am-cf">
+                    <div class="am-text-center p50">
+                        <input type="text"  placeholder="输入岗位名称" class="inputstyle w265" />
+                    </div>
+                
+                </div>
+            <div class="am-modal-footer">
+                <button type="button" class="am-btn am-btn-primary">确定</button>
+                <button type="button" class="am-btn am-btn-default" disabled="disabled">取消</button>
+            </div>
+        </div>
+    </div>
  
     <script src="../../assets/js/libs/jquery.min.js"></script>
     <script src="../../assets/js/libs/amazeui.min.js"></script>
@@ -363,6 +376,18 @@
     <script src="../../assets/js/plugins/city/distpicker.js"></script> 
     <script src="../../assets/js/plugins/city.js"></script> 
     <script src="../../assets/js/main.js"></script>
+    <script>
+            // select 职位类型
+           $('.select-div .select-text').on('click',function(){  
+               $(this).siblings('.select-contdiv').toggleClass('selectcontShow');  
+           });  
+           $('.select-div .select-contdiv ul li').on('click',function(){  
+               var selTxt=$(this).text();  
+               $('.select-div .select-text').text(selTxt);  
+               $('.select-contdiv').removeClass('selectcontShow');  
+           });  
+       
+       </script>
    
 </body>
 </html>    

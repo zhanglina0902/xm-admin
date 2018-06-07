@@ -107,18 +107,20 @@
                             <div class="am-form-group xm-form">
                                 <label for="user-phone" class="am-form-label">职位类别</label>
                                 <div class="xm-form-cont am-cf" >
-                                    <div class="w168 am-fl zhiwei-select">
-                                        <select >
-                                            <option value="请选择">请选择</option>
-                                            <option value="产品">产品</option>
-                                            <option value="设计" >设计</option>
-                                            <option value="" >新增职位</option>
-                                            
-                                        </select>
+                                    <div class="w168 am-fl">
+                                        <div class="select-div">  
+                                            <div class="select-text">产品</div>  
+                                            <div class="select-contdiv"> 
+                                                <button class="add-btn am-btn am-btn-default" type="button" data-am-modal="{target: '#xinzeng-modal'}">+新增岗位</button> 
+                                                <ul>  
+                                                    <li>产品</li>  
+                                                    <li>技术</li>  
+                                                    <li>运营</li>  
+                                                    <li>销售</li>  
+                                                </ul>  
+                                            </div>  
+                                        </div>  
                                     </div>  
-                                    <div class="am-fl">
-                                            <button class="am-btn am-btn-line-red am-btn-add" type="button" data-am-modal="{target: '#xinzeng-modal'}">+新增员工</button>
-                                    </div>                                    
                                 </div>
                             </div>
                             <div class="am-form-group xm-form">
@@ -341,7 +343,7 @@
                                 <label for="user-phone" class="am-form-label">审批人</label>
                                 <div class="xm-form-cont am-cf" >
                                     <div class="w168 am-fl mr15">
-                                        <select >
+                                        <select  >
                                             <option value="添加抄送">添加抄送</option>
                                             <option value="同事1">张丽丽1</option>
                                             <option value="同事2">李莹</option>
@@ -502,7 +504,7 @@
 
 
 
-    <!-- 新增职位类型 -->
+    <!-- 新增岗位 -->
     <div class="am-modal " tabindex="-1" id="xinzeng-modal">
             <div class="am-modal-dialog">
                 <div class="am-modal-hd">添加岗位
@@ -529,6 +531,18 @@
     <script src="../../assets/js/plugins/city/distpicker.js"></script> 
     <script src="../../assets/js/plugins/city.js"></script> 
     <script src="../../assets/js/main.js"></script>
+    <script>
+         // select 职位类型
+        $('.select-div .select-text').on('click',function(){  
+            $(this).siblings('.select-contdiv').toggleClass('selectcontShow');  
+        });  
+        $('.select-div .select-contdiv ul li').on('click',function(){  
+            var selTxt=$(this).text();  
+            $('.select-div .select-text').text(selTxt);  
+            $('.select-contdiv').removeClass('selectcontShow');  
+        });  
+    
+    </script>
    
 </body>
 </html>    

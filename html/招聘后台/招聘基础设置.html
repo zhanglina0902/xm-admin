@@ -1,0 +1,315 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>招聘</title>
+    <meta name="description" content="集团系统" />
+    <meta name="keywords" content="组织架构" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" type="image/png" href="../../assets/i/favicon.ico" />
+    <link rel="stylesheet" href="../../assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../../assets/css/iconfont.css" />
+    <link rel="stylesheet" href="../../assets/css/amazeui.css" />
+    <link rel="stylesheet" href="../../assets/css//plugin.css" />
+    <link rel="stylesheet" href="../../assets/css/global.css" />
+    <link rel="stylesheet" href="../../assets/css/admin-xm.css" />
+</head>
+
+<body>
+    <!--header-->
+    <header class="admin-header">
+        <!-- logo -->
+        <div class="xm-logo">
+            <a href="javascript:;">
+                <img src="../../assets/img/xm-logo.svg" alt="logo" />
+            </a>
+        </div>
+        <!-- admin middle menu -->
+        <div class="group-nav">
+            <a href="" class="active">工作台</a>
+            <a href="">组织架构</a>
+            <a href="">员工管理</a>
+            <a href="">角色权限</a>
+            <a href="">设置</a>
+        </div>
+        <!-- right account -->
+        <div class="am-collapse am-topbar-collapse">
+            <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list ">
+                <li>
+                    <div class="account-role">
+                        <a href="" class="am-active">普通用户</a>
+                        <a href="">管理员</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!--pages-->
+    <div class="xm-page-container">
+        <!-- leftpart -->
+        <div class="xm-leftpart">
+            <div id="slimtest1">
+                <div class="leftmenu">
+                    <ul class="navMenu">
+                        <li class="open">
+                            <a href="javascript::" class="afinve ">
+                                <span class="">招聘</span>
+                                <span class=" arrow"></span>
+                            </a>
+                            <ul class="sub-menu" style="display: block">
+                                <li class="active">
+                                    <a href="../招聘后台/招聘基础设置.html">
+                                        <span>基础设置</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span>其他配置</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- rightpart -->
+        <div class="xm-contmain">
+            <div class="pages">
+                <!-- 页面路径 -->
+                <div class="breadbox">
+                    <span>当前位置：</span>
+                    <ol class="am-breadcrumb">
+                        <li>
+                            <a href="">工作台</a>
+                        </li>
+                        <li>
+                            <a href="">招聘</a>
+                        </li>
+                        <li>新建/修改</li>
+                    </ol>
+                </div>
+                <div class="info-box p30">
+                    <div class="w600 pt30">
+                        <div class="wrapper">
+                            <form class="am-form am-form-horizontal">
+                                <div class="am-form-group xm-form">
+                                    <label for="user-name" class="am-form-label">
+                                        <span class="test-star">*</span>模块LOGO</label>
+                                    <div class="xm-form-cont">
+                                        <div class="upload-logo">
+                                            <img src="../../assets/img/mk-logo.png" alt="" class="up-img">
+                                            <div class="up-filebtn upload">上传LOGO
+                                                <input type="file" class="upload_pic" id="upload" />
+                                            </div>
+                                            <div class="tip-text">建议上传尺寸120*120</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="am-form-group xm-form">
+                                    <label for="user-phone" class="am-form-label">
+                                        <span class="test-star">*</span>模块名称</label>
+                                    <div class="xm-form-cont">
+                                        <input type="text" placeholder="渠道名称" />
+                                    </div>
+                                </div>
+                                <div class="am-form-group xm-form">
+                                    <label for="user-phone" class="am-form-label">
+                                        <span class="test-star">*</span>功能介绍</label>
+                                    <div class="xm-form-cont">
+                                        <div class="w450 am-fl">
+                                            <textarea class="" rows="8" id="user-intro" placeholder="输入内容"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="am-form-group xm-form">
+                                    <label for="user-phone" class="am-form-label">
+                                        <span class="test-star">*</span>PC首页网址</label>
+                                    <div class="xm-form-cont">
+                                        <input type="text" placeholder="网址" />
+                                    </div>
+                                </div>
+                                <div class="am-form-group xm-form">
+                                    <label for="user-phone" class="am-form-label">移动端首页网址</label>
+                                    <div class="xm-form-cont">
+                                        <input type="text" placeholder="网址" />
+                                    </div>
+                                </div>
+                                <div class="am-form-group xm-form">
+                                    <label for="user-phone" class="am-form-label">可见范围</label>
+                                    <div class="xm-form-cont">
+                                        <select>
+                                            <option value="请选择">请选择</option>
+                                            <option value="李莹">李莹</option>
+                                            <option value="李莹">李莹</option>
+                                        </select>
+                                        <button class="am-btn am-btn-primary-line" type="button" data-am-modal="{target: '#my-modal'}">+新增员工</button>
+                                    </div>
+                                </div>
+                               
+                                <div class="am-form-group xm-form">
+                                    <div class="xm-form-cont form-btn-group mt30">
+                                        <button type="button" class="am-btn am-btn-primary">确定</button>
+                                        <button type="button" class="am-btn am-btn-default">取消</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="admin-footer">
+                版权信息 ©2018 新博新美
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 新增员工 -->
+    <div class="am-modal " tabindex="-1" id="my-modal">
+        <div class="am-modal-dialog">
+            <div class="am-modal-hd">新增员工
+                <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="am-close">&times;</a>
+            </div>
+            <div class="am-modal-bd">
+                <div class="xm-newperson">
+                    <div class="newpersonlist">
+                        <div class="am-u-lg-12">
+                            <div class="tree-list">
+                                <ul>
+                                    <li>
+                                        <span class="fa fa-angle-down"></span>总裁
+                                        <ul>
+                                            <li>销售部</li>
+                                            <li>运营部</li>
+                                            <li>
+                                                <span class="fa fa-angle-down"></span>研发部
+                                                <ul>
+                                                    <li>美选</li>
+                                                    <li>优选</li>
+                                                    <li>
+                                                        <span class="fa fa-angle-down"></span>精选
+                                                        <ul>
+                                                            <li>移动端</li>
+                                                            <li>pc端</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span class="fa fa-angle-down"></span>研发部
+                                                <ul>
+                                                    <li>美选</li>
+                                                    <li>优选</li>
+                                                    <li>
+                                                        <span class="fa fa-angle-down"></span>精选
+                                                        <ul>
+                                                            <li>移动端</li>
+                                                            <li>pc端</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check-person">
+                        <div class="am-u-lg-12">
+                            <div class="xm-add-search">
+                                <input type="search" placeholder="请输入搜索内容" />
+                                <button type="button" class="am-btn am-btn-primary">
+                                    <span class="fa fa-search"></span>
+                                </button>
+                            </div>
+                            <div class="add-checkboxlist">
+                                <label class="am-checkbox am-text-right">
+                                    <input type="checkbox" value="" data-am-ucheck="checkbox">全部
+                                </label>
+                                <label class="am-checkbox am-text-right">
+                                    <input type="checkbox" value="" data-am-ucheck="checkbox">张三
+                                </label>
+                                <label class="am-checkbox am-text-right">
+                                    <input type="checkbox" value="" data-am-ucheck="checkbox">张三
+                                </label>
+                                <label class="am-checkbox am-text-right">
+                                    <input type="checkbox" value="" data-am-ucheck="checkbox">张三
+                                </label>
+                                <label class="am-checkbox am-text-right">
+                                    <input type="checkbox" value="" data-am-ucheck="checkbox">张三
+                                </label>
+                                <label class="am-checkbox am-text-right">
+                                    <input type="checkbox" value="" data-am-ucheck="checkbox">张三
+                                </label>
+                                <label class="am-checkbox am-text-right">
+                                    <input type="checkbox" value="" data-am-ucheck="checkbox">张三
+                                </label>
+                                <label class="am-checkbox am-text-right">
+                                    <input type="checkbox" value="" data-am-ucheck="checkbox">张三
+                                </label>
+                                <label class="am-checkbox am-text-right">
+                                    <input type="checkbox" value="" data-am-ucheck="checkbox">张三
+                                </label>
+                                <label class="am-checkbox am-text-right">
+                                    <input type="checkbox" value="" data-am-ucheck="checkbox">张三
+                                </label>
+                                <label class="am-checkbox am-text-right">
+                                    <input type="checkbox" value="" data-am-ucheck="checkbox">张三
+                                </label>
+                                <label class="am-checkbox am-text-right">
+                                    <input type="checkbox" value="" data-am-ucheck="checkbox">张三
+                                </label>
+                                <label class="am-checkbox am-text-right">
+                                    <input type="checkbox" value="" data-am-ucheck="checkbox">张三
+                                </label>
+                                <label class="am-checkbox am-text-right">
+                                    <input type="checkbox" value="" data-am-ucheck="checkbox">张三
+                                </label>
+                                <label class="am-checkbox am-text-right">
+                                    <input type="checkbox" value="" data-am-ucheck="checkbox">张三
+                                </label>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+            <div class="am-modal-footer">
+                <button type="button" class="am-btn am-btn-primary">确定</button>
+                <button type="button" class="am-btn am-btn-default" disabled="disabled">取消</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/libs/jquery.min.js"></script>
+    <script src="../../assets/js/libs/amazeui.min.js"></script>
+    <script src="../../assets/js/plugins/jquery.slimscroll.min.js"></script>
+    <script src="../../assets/js/plugins/city/distpicker.data.js"></script>
+    <script src="../../assets/js/plugins/city/distpicker.js"></script>
+    <script src="../../assets/js/plugins/city.js"></script>
+    <script src="../../assets/js/plugins/switch/amazeui.switch.js"></script>
+
+    <script src="../../assets/js/main.js"></script>
+    <!-- <script>
+        $('#my-modal').modal(options);
+
+        
+    </script> -->
+
+</body>
+
+</html>

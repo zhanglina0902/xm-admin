@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../assets/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../../assets/css/iconfont.css" />
     <link rel="stylesheet" href="../../assets/css/amazeui.css" />
+    <link rel="stylesheet" href="../../assets/js/plugins/jbox/jBox.css" />
     <link rel="stylesheet" href="../../assets/css/plugin.css" />
     <link rel="stylesheet" href="../../assets/css/global.css" />
     <link rel="stylesheet" href="../../assets/css/admin-xm.css" />
@@ -228,38 +229,7 @@
                                         <td class="am-text-center">是</td>
                                         <td class="am-text-center">是</td>
                                         <td class="xm-handle" >
-                                            <span class="fa fa-ellipsis-v xm-icons" ></span>
-                                            <div class="xm-handlebox"  style="display:block" >
-                                                <div class="xm-popcont-1">
-                                                    <div class="am-cf">
-                                                        <a href="">
-                                                            <span class="icon xm-icon-xingzhuang"></span>
-                                                            <p>查看</p>
-                                                        </a>
-                                                        <a href="">
-                                                            <span class="icon xm-icon-fabu"></span>
-                                                            <p>发布</p>
-                                                        </a>
-                                                        <a href="">
-                                                            <span class="icon xm-icon-yijiao"></span>
-                                                            <p>移交</p>
-                                                        </a>
-                                                        <a href="">
-                                                            <span class="icon xm-icon-qiyong"></span>
-                                                            <p>启用</p>
-                                                        </a>
-                                                        <a href="">
-                                                            <span class="icon xm-icon-jinyong"></span>
-                                                            <p>禁用</p>
-                                                        </a>
-                                                        <a href="">
-                                                            <span class="icon xm-icon-delete"></span>
-                                                            <p>删除</p>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="xm-popcaret"></div>
-                                            </div>
+                                            <span class="fa fa-ellipsis-v xm-icons" id="Tooltip-1" ></span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -280,7 +250,7 @@
                                         <td class="am-text-center">是</td>
                                         <td class="xm-handle" >
                                             <span class="fa fa-ellipsis-v xm-icons" ></span>
-                                            <div class="xm-handlebox"  style="display:block" >
+                                            <!-- <div class="xm-handlebox"  style="display:block" >
                                                 <div class="xm-popcont-1">
                                                     <div class="am-cf">
                                                         <a href="">
@@ -311,7 +281,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="xm-popcaret"></div>
-                                            </div>
+                                            </div> -->
                                         </td>
                                     </tr>
                                     <tr>
@@ -332,7 +302,7 @@
                                         <td class="am-text-center">是</td>
                                         <td class="xm-handle" >
                                             <span class="fa fa-ellipsis-v xm-icons" ></span>
-                                            <div class="xm-handlebox"  style="display:block" >
+                                            <!-- <div class="xm-handlebox"  style="display:block" >
                                                 <div class="xm-popcont-1">
                                                     <div class="am-cf">
                                                         <a href="">
@@ -359,7 +329,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="xm-popcaret"></div>
-                                            </div>
+                                            </div> -->
                                         </td>
                                     </tr>
                                     <tr>
@@ -380,7 +350,7 @@
                                         <td class="am-text-center">是</td>
                                         <td class="xm-handle" >
                                             <span class="fa fa-ellipsis-v xm-icons" ></span>
-                                            <div class="xm-handlebox"  style="display:block" >
+                                            <!-- <div class="xm-handlebox"  style="display:block" >
                                                 <div class="xm-popcont-1">
                                                     <div class="am-cf">
                                                         <a href="">
@@ -407,7 +377,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="xm-popcaret"></div>
-                                            </div>
+                                            </div> -->
                                         </td>
                                     </tr>
                                     <tr>
@@ -428,7 +398,7 @@
                                         <td class="am-text-center">是</td>
                                         <td class="xm-handle" >
                                             <span class="fa fa-ellipsis-v xm-icons" ></span>
-                                            <div class="xm-handlebox"  style="display:block" >
+                                            <!-- <div class="xm-handlebox"  style="display:block" >
                                                 <div class="xm-popcont-1">
                                                     <div class="am-cf">
                                                         <a href="">
@@ -455,7 +425,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="xm-popcaret"></div>
-                                            </div>
+                                            </div> -->
                                         </td>
                                     </tr>
                                     <tr>
@@ -476,7 +446,7 @@
                                         <td class="am-text-center">是</td>
                                         <td class="xm-handle" >
                                             <span class="fa fa-ellipsis-v xm-icons" ></span>
-                                            <div class="xm-handlebox"  style="display:block" >
+                                            <!-- <div class="xm-handlebox"  style="display:block" >
                                                 <div class="xm-popcont-1">
                                                     <div class="am-cf">
                                                         <a href="">
@@ -507,7 +477,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="xm-popcaret"></div>
-                                            </div>
+                                            </div> -->
                                         </td>
                                     </tr>
                                 </tbody>
@@ -542,7 +512,30 @@
     <script src="../../assets/js/libs/amazeui.min.js"></script>
     <script src="../../assets/js/plugins/jquery.slimscroll.min.js"></script> 
     <script src="../../assets/js/plugins/pagination/jquery.pagination.js"></script> 
+    <script src="../../assets/js/plugins/jbox/jBox.js"></script> 
     <script src="../../assets/js/main.js"></script>
+    <script>
+
+
+        // 操作
+       
+      new jBox('Tooltip', {
+        attach: '#Tooltip-1',
+        theme: 'TooltipBorderThick',
+        closeOnMouseleave: true,
+        position: {
+            x: 'left',
+            y: 'center'
+        },
+        outside: 'x',
+        pointer: 'top:15',
+        content: '<div class=xm-popcont-1><a><span class=xm-icon-xingzhuang></span><p>查看</p></a><a><span class=xm-icon-shenpi></span><p>审批</p></a><a><span class=xm-icon-xiugai></span><p>修改</p></a><a><span class=xm-icon-fabu></span><p>发布</p></a><a><span class=xm-icon-yijiao></span><p>移交</p></a><a><span class=xm-icon-qiyong></span><p>启用</p></a><a><span class=xm-icon-jinyong></span><p>禁用</p></a><a><span class=xm-icon-delete></span><p>删除</p></a></div>',
+        animation: 'move'
+        });
+    </script>
+
+
+
    
    
   
